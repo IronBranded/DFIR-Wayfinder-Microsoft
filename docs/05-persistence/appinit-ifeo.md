@@ -1,3 +1,12 @@
+---
+tags:
+  - Persistence
+  - Endpoint
+  - T1546
+  - T1546.010
+  - T1546.012
+---
+
 # Persistence: AppInit_DLLs & Image File Execution Options
 
 Two more mechanisms grouped together — both are Windows compatibility features from an earlier, more trusting era of the OS, both are still functional, and both give an attacker code execution tied to legitimate processes rather than a standalone process of their own.
@@ -31,6 +40,13 @@ IFEO exists so developers can attach a debugger to a specific executable automat
 ## Cleanup
 
 Delete the offending registry value(s) entirely — `Debugger`, `AppInit_DLLs`, or reset `LoadAppInit_DLLs` to `0`. For the sticky-keys pattern specifically, verify no other accessibility executable was similarly hijacked; attackers who use one often set up two or three as redundant footholds.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Module 5: Persistence Catalog](index.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

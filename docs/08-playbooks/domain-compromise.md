@@ -1,3 +1,8 @@
+---
+tags:
+  - Playbook
+---
+
 # Playbook: Domain Compromise / Lateral Movement
 
 ## Trigger
@@ -37,6 +42,17 @@ Re-enable accounts and hosts in stages, with monitoring in place, rather than al
 ## Lessons learned
 
 Was there a credential-tiering model in place (workstation-tier accounts never used for server or DC administration)? Where did detection actually catch this — and how much lateral movement happened before it did? That gap is usually the most actionable finding in the whole incident.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [ATT&CK Coverage Map](../00-foundations/attack-coverage-map.md)
+- [Automated Investigation & Remediation: What It Does, and Doesn't, Do](../07-defender-suite/automated-investigation-remediation.md)
+- [Module 8: Investigation Playbooks](index.md)
+- [Case Study: Domain Compromise, End to End](../case-studies/domain-compromise-case-study.md)
+- [Case Studies](../case-studies/index.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

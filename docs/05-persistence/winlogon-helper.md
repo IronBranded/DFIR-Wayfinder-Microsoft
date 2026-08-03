@@ -1,3 +1,11 @@
+---
+tags:
+  - Persistence
+  - Endpoint
+  - T1547
+  - T1547.004
+---
+
 # Persistence: Winlogon Shell / Userinit Modification
 
 **ATT&CK:** [T1547.004](https://attack.mitre.org/techniques/T1547/004/) — Boot or Logon Autostart Execution: Winlogon Helper DLL
@@ -28,6 +36,13 @@ Check `Shell` and `Userinit` against their known-good values on every host in sc
 ## Cleanup
 
 Restore both values to their standard defaults exactly — a typo or extra character left behind during remediation can itself break normal logon for every user on the host, so verify the restored value character-for-character rather than assuming it's back to normal.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Module 5: Persistence Catalog](index.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

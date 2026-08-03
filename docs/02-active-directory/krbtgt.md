@@ -1,3 +1,10 @@
+---
+tags:
+  - Active Directory
+  - T1558
+  - T1558.001
+---
+
 # krbtgt: What It Is, and Why It Gets Reset Twice
 
 ## What it is
@@ -23,6 +30,18 @@ This is exactly the mechanism that defeats a single reset as remediation: resett
     4. Reset `krbtgt` a second time, and again allow full replication convergence.
 
 Skipping the wait between resets, or resetting only once, are the two most common ways organizations believe they've remediated a Golden Ticket incident and are wrong.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [DCSync Detection](dcsync-detection.md)
+- [Golden Ticket & Silver Ticket Indicators](golden-silver-ticket.md)
+- [Module 2: Active Directory & Domain Controllers](index.md)
+- [Case Study: Domain Compromise, End to End](../case-studies/domain-compromise-case-study.md)
+- [Drill: Event Log Story](../practice-drills/event-log-drill.md)
+- [Windows IR Quick Reference](../quick-reference/windows-ir-poster.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

@@ -1,3 +1,10 @@
+---
+tags:
+  - Windows Endpoint
+  - T1070
+  - T1070.004
+---
+
 # Artifact: USN Journal
 
 ## What it is / where it lives
@@ -36,6 +43,19 @@ Collect this early: because it's a rolling buffer, ongoing system activity (incl
 ## ATT&CK mapping
 
 Primary evidence source for [T1070.004 (Indicator Removal: File Deletion)](https://attack.mitre.org/techniques/T1070/004/) — proving a file existed and was removed even when the file itself, and possibly its Prefetch/Amcache traces, are gone.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Module 1: Windows Endpoint Forensics](index.md)
+- [Playbook: Data Exfiltration](../08-playbooks/data-exfiltration.md)
+- [Playbook: Insider Threat](../08-playbooks/insider-threat.md)
+- [Alternate Data Streams (ADS)](../anti-forensics/alternate-data-streams.md)
+- [File Carving](../anti-forensics/file-carving.md)
+- [Anti-Forensics & Data Recovery](../anti-forensics/index.md)
+- [Log & Artifact Recovery](../anti-forensics/log-artifact-recovery.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

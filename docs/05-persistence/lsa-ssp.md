@@ -1,3 +1,11 @@
+---
+tags:
+  - Persistence
+  - Endpoint
+  - T1547
+  - T1547.005
+---
+
 # Persistence: LSA Provider / Security Support Provider Abuse
 
 **ATT&CK:** [T1547.005](https://attack.mitre.org/techniques/T1547/005/) — Boot or Logon Autostart Execution: Security Support Provider
@@ -22,6 +30,15 @@ Any addition to the `Security Packages` value outside of a documented change (a 
 ## Cleanup
 
 Remove the malicious entry from `Security Packages`, then reboot — the SSP is loaded at boot, so removing the registry reference alone doesn't unload it from an already-running `lsass.exe`. Treat any host with a confirmed rogue SSP as having had credentials for every account that authenticated since installation potentially exposed.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [PowerShell Forensics: Malicious Cmdlet Patterns](../04-powershell-forensics/powershell-malicious-patterns.md)
+- [Module 5: Persistence Catalog](index.md)
+- [Glossary](../glossary.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

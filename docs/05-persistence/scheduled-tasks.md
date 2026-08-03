@@ -1,3 +1,11 @@
+---
+tags:
+  - Persistence
+  - Endpoint
+  - T1053
+  - T1053.005
+---
+
 # Persistence: Scheduled Tasks
 
 **ATT&CK:** [T1053.005](https://attack.mitre.org/techniques/T1053/005/) — Scheduled Task/Job: Scheduled Task
@@ -25,6 +33,15 @@ Look for tasks whose **Author** field doesn't match a legitimate software vendor
 ## Cleanup
 
 Delete the task (`schtasks /delete`), but pull and preserve the XML definition first — it's your best record of exactly what the attacker configured, including any command-line arguments that might reveal C2 infrastructure or a staged payload path.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Module 5: Persistence Catalog](index.md)
+- [Advanced Hunting with KQL](../07-defender-suite/advanced-hunting-kql.md)
+- [Playbook: Ransomware](../08-playbooks/ransomware.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

@@ -1,3 +1,9 @@
+---
+tags:
+  - Anti-Forensics
+  - T1070.006
+---
+
 # Anti-Forensics & Data Recovery
 
 Every module before this one assumes the evidence is basically intact — an artifact exists, and the question is how to read it correctly. This module is about the other half of real investigations: an attacker who knows this guide exists too, and takes deliberate steps to destroy, hide, or corrupt the evidence before you get to it — and what's actually still recoverable when they try.
@@ -26,6 +32,13 @@ Every technique on this page's linked pages relies on the same underlying weakne
 - [Log & Artifact Recovery](log-artifact-recovery.md) — what survives log clearing, USN Journal deletion, and a stealthier technique that avoids the obvious "log cleared" event entirely
 - [Volume Shadow Copy Recovery](volume-shadow-copy-recovery.md) — using point-in-time snapshots to recover data as it existed before tampering
 - [Memory-Based File Recovery](memory-based-file-recovery.md) — recovering a file that's gone from disk but was still resident in memory when captured
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Enterprise DFIR Field Guide](../index.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

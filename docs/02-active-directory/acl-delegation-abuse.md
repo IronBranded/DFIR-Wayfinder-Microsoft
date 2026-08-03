@@ -1,3 +1,13 @@
+---
+tags:
+  - Active Directory
+  - T1098
+  - T1098.001
+  - T1098.007
+  - T1484
+  - T1484.002
+---
+
 # ACL & Delegation Abuse
 
 ## Why this is bigger than AdminSDHolder
@@ -39,6 +49,14 @@ Auditing this proactively (before an incident) means periodically mapping the ac
 ## ATT&CK mapping
 
 [T1098.001–T1098.007 (Account Manipulation)](https://attack.mitre.org/techniques/T1098/) broadly, and [T1484.002 (Domain Trust Modification)](https://attack.mitre.org/techniques/T1484/) where the abused object relates to trust configuration specifically.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [ATT&CK Coverage Map](../00-foundations/attack-coverage-map.md)
+- [Module 2: Active Directory & Domain Controllers](index.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

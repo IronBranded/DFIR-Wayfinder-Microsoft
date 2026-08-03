@@ -1,3 +1,8 @@
+---
+tags:
+  - Case Study
+---
+
 # Case Study: Business Email Compromise, End to End
 
 Where the [Domain Compromise case study](domain-compromise-case-study.md) is about a wrong clock, this one is about a different — and arguably more dangerous — timing trap: a log source that's telling the truth, but not yet. Cloud logs don't have the clock-skew problem endpoint logs do (Microsoft's own timestamps are reliably UTC-accurate), but they have a different one, and it can lead an investigator to declare an incident clean when it isn't.
@@ -60,6 +65,13 @@ Two different evidentiary bars appear in this case study, and it's worth naming 
 - **At Step 2**, one *negative* result from a source with known latency was **not** enough to justify standing down. Absence of evidence from a source that hasn't finished ingesting isn't evidence of absence — the correct response to an inconclusive negative is to act on what's already confirmed and re-check later, not to treat silence as an answer.
 
 Knowing which bar applies when — acting fast on strong positive evidence, refusing to act on a premature negative — is most of what separates a fast, correct response from a fast, wrong one.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Case Studies](index.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

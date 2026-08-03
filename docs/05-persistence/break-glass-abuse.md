@@ -1,3 +1,11 @@
+---
+tags:
+  - Persistence
+  - Cloud
+  - T1078
+  - T1078.004
+---
+
 # Persistence: Break-Glass / Emergency-Access Account Abuse
 
 **ATT&CK:** [T1078.004](https://attack.mitre.org/techniques/T1078/004/) — Valid Accounts: Cloud Accounts
@@ -22,6 +30,13 @@ Alert on **any** sign-in to a designated break-glass account, full stop — the 
 ## Cleanup
 
 Rotate the break-glass account's credentials immediately (and re-secure however they're stored), review the Conditional Access exclusion lists across every policy for unauthorized additions, and treat every action taken during any unauthorized session on this account as maximally privileged — assume it had access to essentially everything in the tenant.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Module 5: Persistence Catalog](index.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

@@ -1,3 +1,10 @@
+---
+tags:
+  - Persistence
+  - Endpoint
+  - T1197
+---
+
 # Persistence: BITS Jobs
 
 **ATT&CK:** [T1197](https://attack.mitre.org/techniques/T1197/) — BITS Jobs
@@ -22,6 +29,13 @@ Alert on BITS jobs configured with a `SetNotifyCmdLine` (the completion-command 
 ## Cleanup
 
 Enumerate and remove the job (`bitsadmin /list /allusers` to find it, `bitsadmin /cancel <jobid>` to remove it, or the equivalent `Get-BitsTransfer` / `Remove-BitsTransfer` cmdlets), and treat the configured notification command as you would any other discovered piece of attacker tooling — it may point directly at a staged payload or C2 endpoint.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Module 5: Persistence Catalog](index.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

@@ -1,3 +1,9 @@
+---
+tags:
+  - Foundations
+  - T1547.001
+---
+
 # Module 0: Foundations
 
 Before touching a single artifact, every investigator needs shared vocabulary and shared frameworks. This module is short by design — six ideas, each of which gets used constantly in every module that follows.
@@ -17,3 +23,11 @@ Before touching a single artifact, every investigator needs shared vocabulary an
 
 !!! tip "How to use this module"
     Skim it once end to end, then treat it as a reference. When a later page says "tagged T1547.001" or "this is a Pyramid-of-Pain TTP-level detection," come back here if the shorthand doesn't click yet.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Enterprise DFIR Field Guide](../index.md)
+
+<!-- BACKLINKS:END -->
+

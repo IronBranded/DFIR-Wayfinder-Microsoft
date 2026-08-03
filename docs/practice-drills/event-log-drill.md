@@ -1,3 +1,8 @@
+---
+tags:
+  - Practice Drill
+---
+
 # Drill: Event Log Story
 
 ## The scenario
@@ -24,3 +29,14 @@ Six Security-log events from a Domain Controller, in chronological order, stripp
     **The single most urgent action:** given step 2, assume `krbtgt` is compromised and start the [double-reset procedure](../02-active-directory/krbtgt.md) — a single reset will not fully invalidate a Golden Ticket forged from a hash obtained here. Given step 3, don't stop at re-securing `svc-backup` alone: check `AdminSDHolder`'s ACL directly, because SDProp will keep re-propagating a poisoned entry to every protected account until the source object itself is fixed, not just the account that made the change.
 
     **Why the log-clear event doesn't erase the trail:** 1102 clearing the *Security* log doesn't touch [replication metadata](../02-active-directory/replication-metadata.md), which lives in the directory itself, not the event log — `repadmin /showobjmeta` against `AdminSDHolder` still reconstructs what changed and when, even after step 4.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Event Log Key IDs Reference](../01-windows-endpoint/event-log-key-ids.md)
+- [AdminSDHolder / SDProp Abuse](../02-active-directory/adminsdholder.md)
+- [Case Study: Domain Compromise, End to End](../case-studies/domain-compromise-case-study.md)
+- [Practice Drills](index.md)
+
+<!-- BACKLINKS:END -->
+

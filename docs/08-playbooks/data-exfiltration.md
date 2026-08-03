@@ -1,3 +1,8 @@
+---
+tags:
+  - Playbook
+---
+
 # Playbook: Data Exfiltration
 
 ## Trigger
@@ -36,6 +41,14 @@ Work with Legal/compliance to assess breach-notification obligations based on th
 ## Lessons learned
 
 Where was the DLP/monitoring gap that let this reach the point of actual data leaving, rather than being caught at the attempt stage? Was the sensitivity of the affected data actually reflected in its access controls beforehand?
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [ATT&CK Coverage Map](../00-foundations/attack-coverage-map.md)
+- [Module 8: Investigation Playbooks](index.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

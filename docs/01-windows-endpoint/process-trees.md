@@ -1,3 +1,11 @@
+---
+tags:
+  - Windows Endpoint
+  - T1036
+  - T1055
+  - T1204
+---
+
 # Baseline Process Trees
 
 Knowing what's abnormal requires knowing what's normal first. A handful of core Windows processes have parent/child relationships that essentially never legitimately vary — which makes deviations from them some of the highest-confidence detections available on an endpoint.
@@ -58,6 +66,29 @@ Process-tree anomalies are frequently the first observable for [T1055 (Process I
 
 !!! tip "Practice this"
     [Process Tree Triage](../practice-drills/process-tree-drill.md) hides one spoofed-parentage process in an otherwise-normal listing — see if you can spot it before checking the answer.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Module 1: Windows Endpoint Forensics](index.md)
+- [EPROCESS Internals](../03-memory-forensics/eprocess-internals.md)
+- [Injection Techniques: What Each Looks Like in Memory](../03-memory-forensics/injection-techniques.md)
+- [LSASS Memory Analysis & Credential Theft](../03-memory-forensics/lsass-memory-analysis.md)
+- [Malware Triage Methodology](../03-memory-forensics/malware-triage-methodology.md)
+- [Mutex (Mutant) Analysis](../03-memory-forensics/mutex-analysis.md)
+- [Process Analysis: Finding What's Hidden](../03-memory-forensics/volatility-process-analysis.md)
+- [PowerShell Forensics: Malicious Cmdlet Patterns](../04-powershell-forensics/powershell-malicious-patterns.md)
+- [Persistence: LSA Provider / Security Support Provider Abuse](../05-persistence/lsa-ssp.md)
+- [The Entra Connect Server: A Target in Its Own Right](../06-cloud-identity/entra-connect-as-target.md)
+- [Advanced Hunting with KQL](../07-defender-suite/advanced-hunting-kql.md)
+- [Playbook: Domain Compromise / Lateral Movement](../08-playbooks/domain-compromise.md)
+- [Playbook: Ransomware](../08-playbooks/ransomware.md)
+- [Playbook: Web Shell / Server Compromise](../08-playbooks/web-shell-compromise.md)
+- [Practice Drills](../practice-drills/index.md)
+- [Drill: Process Tree Triage](../practice-drills/process-tree-drill.md)
+- [Windows IR Quick Reference](../quick-reference/windows-ir-poster.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

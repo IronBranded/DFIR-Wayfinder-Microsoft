@@ -1,3 +1,8 @@
+---
+tags:
+  - Cloud Identity
+---
+
 # Hybrid Sync Mechanics
 
 Three distinct models exist for connecting on-prem Active Directory identities to Entra ID, and knowing which one an environment uses changes both the attack surface and the investigation approach.
@@ -19,6 +24,13 @@ An entirely different trust model: authentication is redirected to on-prem AD FS
 ## Why this matters for scoping an investigation
 
 The sync model in use determines where to even look. A PHS environment's authentication story lives primarily in the cloud (Entra sign-in logs); a PTA environment requires checking both the cloud request and the on-prem agent/DC logs it was forwarded to; a federated environment requires including the AD FS server itself as an in-scope asset from the start — treating it the same way this guide treats a Domain Controller, not as a peripheral system.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Module 6: Cloud Identity (Entra ID / Hybrid)](index.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

@@ -1,3 +1,8 @@
+---
+tags:
+  - Foundations
+---
+
 # The Pyramid of Pain
 
 Developed by David Bianco, the Pyramid of Pain ranks indicator types by how much it costs an adversary when you detect on them — not by how easy the indicator is for *you* to collect.
@@ -19,6 +24,15 @@ This is also why [Module 5](../05-persistence/index.md) tags every persistence m
 
 !!! success "How to apply it while hunting"
     When you find an indicator, ask where it sits on the pyramid before you write a detection rule around it. A rule at the hash/IP level needs constant feeding. A rule at the TTP level, once built, keeps working against variants you haven't seen yet.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Module 0: Foundations](index.md)
+- [Operationalizing Threat Intelligence](threat-intelligence-operationalization.md)
+- [Glossary](../glossary.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

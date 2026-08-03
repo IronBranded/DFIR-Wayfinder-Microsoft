@@ -1,3 +1,9 @@
+---
+tags:
+  - Windows Endpoint
+  - T1003
+---
+
 # Artifact: Registry Hives
 
 ## What it is / where it lives
@@ -42,6 +48,13 @@ Hives are locked while Windows is running — pull them from an offline image, a
 ## ATT&CK mapping
 
 The registry is a **data source**, not a technique — it underlies a huge share of the [Persistence Catalog](../05-persistence/index.md) (Run keys, services, COM hijacking, and more all live here), plus credential material in `SAM`/`SECURITY` relevant to [T1003 (OS Credential Dumping)](https://attack.mitre.org/techniques/T1003/).
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Module 1: Windows Endpoint Forensics](index.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

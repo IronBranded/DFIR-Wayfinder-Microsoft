@@ -1,3 +1,8 @@
+---
+tags:
+  - Practice Drill
+---
+
 # Practice Drills
 
 Everything in Modules 0–8 is reference material — what to look for, and why. This section is different: each drill presents **realistic, simulated data** in the format a real tool would actually output, and asks you to find the red flags yourself before revealing the answer.
@@ -21,3 +26,11 @@ This wasn't part of the original module plan — it's an addition, built because
 ## A note on what these are (and aren't)
 
 Every scenario, dataset, and event sequence on these pages is **original and synthetic** — written for this guide, not pulled from any real incident or vendor sample set. That's why these pages don't carry a "Sources" section the way the rest of the guide does: there's no external material being drawn from. What *is* sourced is every specific technical claim used to build and explain each scenario (a GUID, an event ID, a registry path, an encoding scheme) — each one traces back to a reference page elsewhere in this guide, linked from inside the answer, where the actual sourcing lives.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Enterprise DFIR Field Guide](../index.md)
+
+<!-- BACKLINKS:END -->
+

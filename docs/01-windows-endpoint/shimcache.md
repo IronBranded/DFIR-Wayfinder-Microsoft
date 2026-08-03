@@ -1,3 +1,11 @@
+---
+tags:
+  - Windows Endpoint
+  - T1070
+  - T1070.006
+  - T1204
+---
+
 # Artifact: Shimcache (AppCompatCache)
 
 ## What it is / where it lives
@@ -45,6 +53,15 @@ AppCompatCacheParser.exe -f C:\triage\SYSTEM --csv C:\triage\output
 ## ATT&CK mapping
 
 Data source supporting [T1204 (User Execution)](https://attack.mitre.org/techniques/T1204/) (with the caveats above) and useful corroboration for [T1070.006 (Timestomp)](https://attack.mitre.org/techniques/T1070/006/) via the modified-timestamp mismatch pattern.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Module 1: Windows Endpoint Forensics](index.md)
+- [Process Analysis: Finding What's Hidden](../03-memory-forensics/volatility-process-analysis.md)
+- [Glossary](../glossary.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

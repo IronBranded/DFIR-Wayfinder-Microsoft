@@ -1,3 +1,11 @@
+---
+tags:
+  - Persistence
+  - Endpoint
+  - T1547
+  - T1547.001
+---
+
 # Persistence: Registry Run / RunOnce Keys
 
 **ATT&CK:** [T1547.001](https://attack.mitre.org/techniques/T1547/001/) — Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder
@@ -29,6 +37,15 @@ Remove the value, then confirm nothing re-adds it on next logon — a Run key is
 
 !!! tip "Practice this"
     [Registry Persistence Triage](../practice-drills/registry-persistence-drill.md) puts six Run key values in front of you, five legitimate and one planted — find it before revealing the answer.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Module 5: Persistence Catalog](index.md)
+- [Practice Drills](../practice-drills/index.md)
+- [Drill: Registry Persistence Triage](../practice-drills/registry-persistence-drill.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

@@ -1,3 +1,10 @@
+---
+tags:
+  - Foundations
+  - T1547
+  - T1547.001
+---
+
 # MITRE ATT&CK Primer
 
 [MITRE ATT&CK](https://attack.mitre.org) is a knowledge base of adversary behavior built from real-world observed intrusions. This guide uses it as its tagging system: every persistence mechanism, and most artifact and playbook pages, carry an ATT&CK ID so you can pivot straight to MITRE's own detection and mitigation guidance.
@@ -21,6 +28,17 @@ Every entry in the [Persistence Catalog](../05-persistence/index.md) is tagged w
 
 !!! tip "Read technique IDs as a lookup key, not trivia"
     You don't need to memorize IDs. Treat `T1547.001` the way you'd treat a CVE number — a stable reference you look up when you need it.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Module 0: Foundations](index.md)
+- [Operationalizing Threat Intelligence](threat-intelligence-operationalization.md)
+- [Malware Triage Methodology](../03-memory-forensics/malware-triage-methodology.md)
+- [Glossary](../glossary.md)
+- [Enterprise DFIR Field Guide](../index.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

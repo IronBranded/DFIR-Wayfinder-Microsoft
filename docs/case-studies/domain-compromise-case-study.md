@@ -1,3 +1,8 @@
+---
+tags:
+  - Case Study
+---
+
 # Case Study: Domain Compromise, End to End
 
 Every other page in this guide answers "what does this look like" for one artifact at a time. This page is different on purpose: it's one continuous investigation, narrated the way it actually unfolds — including the moment where a naive reading of the timestamps would have led to the wrong conclusion, and how you'd catch that.
@@ -80,6 +85,16 @@ By this point, three independently-generated sources agree with each other: `WKS
 ## What happens from here
 
 This is exactly where the [Domain Compromise playbook](../08-playbooks/domain-compromise.md) picks up — isolate `WKS-4471`, disable `svc-backup`, and begin the [`krbtgt` double-reset](../02-active-directory/krbtgt.md). The DC-side sequence above — 03:14:02 through 03:21:03 — is precisely the [Event Log Story](../practice-drills/event-log-drill.md) drill; if you haven't tried reconstructing it cold, it's a good next step now that you've seen where it comes from.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [ATT&CK Coverage Map](../00-foundations/attack-coverage-map.md)
+- [Reporting & Communication](../00-foundations/reporting-and-communication.md)
+- [Case Study: Business Email Compromise, End to End](bec-case-study.md)
+- [Case Studies](index.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

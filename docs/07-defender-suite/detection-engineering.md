@@ -1,3 +1,8 @@
+---
+tags:
+  - Defender Suite
+---
+
 # Detection Engineering: From Hunt Query to Standing Detection
 
 ## The gap between the two
@@ -24,6 +29,15 @@ Every example in [Advanced Hunting with KQL](advanced-hunting-kql.md) is a reaso
 ## Turning this into report language
 
 For an executive audience specifically, the distinction between "we can find this if we look" and "we're automatically alerted when this happens" is a meaningful, reportable difference in security posture — not just a technical implementation detail. "Following this incident, the detection logic used to identify the compromise (LSASS access via `comsvcs.dll`, correlated with directory replication activity) has been deployed as a standing, automated detection rule running continuously — this specific attack pattern will now generate an immediate alert rather than requiring a hunt to discover" is exactly the kind of forward-looking, decision-relevant statement [Reporting & Communication](../00-foundations/reporting-and-communication.md) calls for in an executive summary's remediation section.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Operationalizing Threat Intelligence](../00-foundations/threat-intelligence-operationalization.md)
+- [Module 7: Microsoft Defender Suite for IR](index.md)
+- [Glossary](../glossary.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

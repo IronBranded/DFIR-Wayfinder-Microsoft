@@ -1,3 +1,9 @@
+---
+tags:
+  - Memory Forensics
+  - T1057
+---
+
 # Mutex (Mutant) Analysis
 
 ## What it is, and why malware authors create them
@@ -34,6 +40,16 @@ A mutex name is one of the more report-friendly findings in memory forensics pre
 ## ATT&CK mapping
 
 Most directly a data source supporting [T1057 (Process Discovery)](https://attack.mitre.org/techniques/T1057/) and general malware-family attribution rather than mapping to a single technique itself — it's an artifact of *how* malware avoids re-infection, not a technique in its own right.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [ATT&CK Coverage Map](../00-foundations/attack-coverage-map.md)
+- [EPROCESS Internals](eprocess-internals.md)
+- [Module 3: Windows Memory Forensics](index.md)
+- [Malware Triage Methodology](malware-triage-methodology.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

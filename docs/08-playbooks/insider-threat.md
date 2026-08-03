@@ -1,3 +1,8 @@
+---
+tags:
+  - Playbook
+---
+
 # Playbook: Insider Threat
 
 ## Trigger
@@ -34,6 +39,14 @@ Standard offboarding hardening once the situation is resolved: full access revoc
 ## Lessons learned
 
 Was access provisioned on a least-privilege basis, or did this person have standing access to data with no clear business need? Was offboarding (for a departure-related case) executed promptly relative to the notice date, or did a gap leave a window for this activity?
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Playbook: Data Exfiltration](data-exfiltration.md)
+- [Module 8: Investigation Playbooks](index.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

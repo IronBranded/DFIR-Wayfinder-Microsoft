@@ -1,3 +1,12 @@
+---
+tags:
+  - Network Analysis
+  - T1071
+  - T1071.004
+  - T1568
+  - T1568.002
+---
+
 # DNS Analysis
 
 ## Why DNS specifically
@@ -39,6 +48,16 @@ Malware checking in with its C2 infrastructure on a fixed or near-fixed interval
 ## Turning this into report language
 
 "Suspicious DNS activity was observed" doesn't tell a technical reader what to verify or an executive reader what it means. "Host `WKS-4471` issued 340 DNS queries to randomly-generated subdomains of `[domain]` over a 6-hour window, with query intervals clustering at 58–62 seconds — a pattern consistent with DNS-based C2 beaconing rather than normal application or user traffic" gives the technical reader the exact numbers to independently verify and the executive reader the plain conclusion: this machine was talking to an attacker on a schedule, not browsing normally.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [ATT&CK Coverage Map](../00-foundations/attack-coverage-map.md)
+- [Glossary](../glossary.md)
+- [Network & Perimeter Log Analysis](index.md)
+- [Proxy & Firewall Log Triage](proxy-firewall-triage.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

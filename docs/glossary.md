@@ -75,3 +75,11 @@ A single lookup point for the acronyms and terms used throughout this guide. Eac
 **XDR (Extended Detection and Response)** — Microsoft's cross-product correlation layer unifying Defender for Endpoint, Identity, Office 365, and Cloud Apps. See [Microsoft Defender Suite](07-defender-suite/index.md).
 
 **Zone.Identifier** — the alternate data stream Windows automatically writes to downloaded files (the "Mark of the Web"), recording download origin. See [Alternate Data Streams](anti-forensics/alternate-data-streams.md).
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Enterprise DFIR Field Guide](index.md)
+
+<!-- BACKLINKS:END -->
+

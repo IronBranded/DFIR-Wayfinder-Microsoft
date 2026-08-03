@@ -1,3 +1,10 @@
+---
+tags:
+  - Active Directory
+  - T1484
+  - T1484.001
+---
+
 # Artifact: SYSVOL & Group Policy Abuse
 
 ## What it is / where it lives
@@ -27,6 +34,14 @@ Diff GPO content against a known-good baseline or backup taken before the suspec
 ## ATT&CK mapping
 
 [T1484.001 (Domain Policy Modification: Group Policy Modification)](https://attack.mitre.org/techniques/T1484/001/).
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [ACL & Delegation Abuse](acl-delegation-abuse.md)
+- [Module 2: Active Directory & Domain Controllers](index.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

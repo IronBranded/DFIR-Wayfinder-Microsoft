@@ -1,3 +1,10 @@
+---
+tags:
+  - Memory Forensics
+  - T1003
+  - T1003.001
+---
+
 # LSASS Memory Analysis & Credential Theft
 
 `lsass.exe` holds authentication material for every account that's touched the host — NTLM hashes, and depending on configuration, cached plaintext credentials and Kerberos tickets. It's the single highest-value credential-theft target on any Windows system, which is exactly why [Module 1's process-tree baseline](../01-windows-endpoint/process-trees.md) treats any deviation in its parentage as a top-priority signal, and why this page exists as its own module.
@@ -30,6 +37,19 @@ Modern Windows (particularly newer enterprise-joined 11 builds) increasingly shi
 ## ATT&CK mapping
 
 [T1003.001 (OS Credential Dumping: LSASS Memory)](https://attack.mitre.org/techniques/T1003/001/).
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [ATT&CK Coverage Map](../00-foundations/attack-coverage-map.md)
+- [Operationalizing Threat Intelligence](../00-foundations/threat-intelligence-operationalization.md)
+- [Module 3: Windows Memory Forensics](index.md)
+- [Malware Triage Methodology](malware-triage-methodology.md)
+- [Advanced Hunting with KQL](../07-defender-suite/advanced-hunting-kql.md)
+- [Case Study: Domain Compromise, End to End](../case-studies/domain-compromise-case-study.md)
+- [Glossary](../glossary.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

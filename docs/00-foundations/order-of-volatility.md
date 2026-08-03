@@ -1,3 +1,8 @@
+---
+tags:
+  - Foundations
+---
+
 # Order of Volatility
 
 The principle, defined in [RFC 3227](https://www.rfc-editor.org/rfc/rfc3227), is simple: collect evidence starting with what disappears fastest. Get the acquisition order wrong and you can permanently lose the exact data that would have explained the incident.
@@ -22,6 +27,17 @@ The principle, defined in [RFC 3227](https://www.rfc-editor.org/rfc/rfc3227), is
 
 !!! success "Baseline habit"
     Before touching a live host, ask: "What's the most volatile evidence I still need, and have I captured it yet?" Then work down the table in order.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Module 0: Foundations](index.md)
+- [Memory Acquisition](../03-memory-forensics/acquisition.md)
+- [Module 3: Windows Memory Forensics](../03-memory-forensics/index.md)
+- [Memory-Based File Recovery](../anti-forensics/memory-based-file-recovery.md)
+- [Windows IR Quick Reference](../quick-reference/windows-ir-poster.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

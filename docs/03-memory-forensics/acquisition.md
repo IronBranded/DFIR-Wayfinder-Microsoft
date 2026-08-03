@@ -1,3 +1,8 @@
+---
+tags:
+  - Memory Forensics
+---
+
 # Memory Acquisition
 
 ## Why this comes first
@@ -27,6 +32,14 @@ Raw/DD format is the most broadly compatible with [Volatility 3](volatility-proc
 
 !!! success "Baseline habit"
     Before running anything else on a live, suspected-compromised host — acquire memory first, using the lightest-footprint method available for that host's actual platform (hypervisor snapshot where possible, a purpose-built live tool otherwise).
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Module 3: Windows Memory Forensics](index.md)
+- [Memory-Based File Recovery](../anti-forensics/memory-based-file-recovery.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

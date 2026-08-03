@@ -1,3 +1,8 @@
+---
+tags:
+  - PowerShell
+---
+
 # PowerShell Forensics: Evasion Detection
 
 This page covers three ways attackers try to defeat PowerShell's own defensive features, and — consistent with every other page in this guide — stays strictly on the detection side: how to recognize an evasion *attempt*, not how to build one.
@@ -38,6 +43,15 @@ Detecting an *escape attempt* matters more than explaining the restriction itsel
 
 !!! danger "Red flag"
     A cluster of CLM-restriction errors in 4104 logging immediately followed by execution of a command CLM should have blocked.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [ATT&CK Coverage Map](../00-foundations/attack-coverage-map.md)
+- [Module 4: PowerShell Forensics](index.md)
+- [Glossary](../glossary.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

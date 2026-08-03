@@ -1,3 +1,11 @@
+---
+tags:
+  - Persistence
+  - Cloud
+  - T1606
+  - T1606.002
+---
+
 # Persistence: Federation Trust Abuse ("Golden SAML")
 
 **ATT&CK:** [T1606.002](https://attack.mitre.org/techniques/T1606/002/) — Forge Web Credentials: SAML Tokens
@@ -26,6 +34,14 @@ Treat the token-signing certificate as one of the highest-value assets in the en
 ## Cleanup
 
 Rotate the token-signing certificate immediately — this invalidates every previously forged token in one action, though it will also require re-establishing the federation trust relationship and should be planned with awareness that it briefly disrupts legitimate federated sign-in. Treat every account in the tenant as potentially compromised for the duration the attacker held certificate access, since a forged token could have targeted any of them.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Module 5: Persistence Catalog](index.md)
+- [Hybrid Sync Mechanics](../06-cloud-identity/hybrid-sync-mechanics.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

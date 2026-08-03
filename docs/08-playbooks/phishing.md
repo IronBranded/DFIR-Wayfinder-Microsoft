@@ -1,3 +1,8 @@
+---
+tags:
+  - Playbook
+---
+
 # Playbook: Phishing (Initial Access)
 
 ## Trigger
@@ -35,6 +40,17 @@ Standard re-enablement once remediation is confirmed complete. Consider targeted
 ## Lessons learned
 
 Was this caught by filtering, or only by user report after the fact — and if the latter, what would need to change for it to be caught earlier? If credentials or a session were captured, does your environment's Conditional Access posture actually resist AiTM (token binding, compliant-device requirements) or does it rely on MFA alone?
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [ATT&CK Coverage Map](../00-foundations/attack-coverage-map.md)
+- [Advanced Hunting with KQL](../07-defender-suite/advanced-hunting-kql.md)
+- [Module 8: Investigation Playbooks](index.md)
+- [Case Study: Business Email Compromise, End to End](../case-studies/bec-case-study.md)
+- [Drill: Timeline Correlation](../practice-drills/timeline-correlation-drill.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

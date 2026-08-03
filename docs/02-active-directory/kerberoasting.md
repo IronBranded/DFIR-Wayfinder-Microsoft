@@ -1,3 +1,10 @@
+---
+tags:
+  - Active Directory
+  - T1558
+  - T1558.003
+---
+
 # Kerberoasting
 
 ## The mechanism
@@ -26,6 +33,19 @@ A single 4769 for a single service a user is about to legitimately access is com
 ## ATT&CK mapping
 
 [T1558.003 (Kerberoasting)](https://attack.mitre.org/techniques/T1558/003/).
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [ATT&CK Coverage Map](../00-foundations/attack-coverage-map.md)
+- [Operationalizing Threat Intelligence](../00-foundations/threat-intelligence-operationalization.md)
+- [AD Certificate Services (AD CS) Abuse](adcs-abuse.md)
+- [Module 2: Active Directory & Domain Controllers](index.md)
+- [Advanced Hunting with KQL](../07-defender-suite/advanced-hunting-kql.md)
+- [Defender for Identity: Mapping Alerts to What You Already Know](../07-defender-suite/defender-for-identity-mapping.md)
+- [Glossary](../glossary.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

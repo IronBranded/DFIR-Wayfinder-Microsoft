@@ -1,3 +1,9 @@
+---
+tags:
+  - Active Directory
+  - T1207
+---
+
 # Artifact: Replication Metadata
 
 ## What it is / where it lives
@@ -30,6 +36,20 @@ Run against a suspect object to get its full per-attribute change history direct
 ## ATT&CK mapping
 
 Primary detection method for [T1207 (Rogue Domain Controller / DCShadow)](https://attack.mitre.org/techniques/T1207/), and a general forensic backstop for reconstructing AD object history when standard event logging wasn't configured or has since rolled off retention.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [ACL & Delegation Abuse](acl-delegation-abuse.md)
+- [AD Certificate Services (AD CS) Abuse](adcs-abuse.md)
+- [AdminSDHolder / SDProp Abuse](adminsdholder.md)
+- [DCSync Detection](dcsync-detection.md)
+- [Module 2: Active Directory & Domain Controllers](index.md)
+- [Artifact: SYSVOL & Group Policy Abuse](sysvol-gpo.md)
+- [Defender for Identity: Mapping Alerts to What You Already Know](../07-defender-suite/defender-for-identity-mapping.md)
+- [Drill: Event Log Story](../practice-drills/event-log-drill.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

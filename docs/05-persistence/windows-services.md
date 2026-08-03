@@ -1,3 +1,11 @@
+---
+tags:
+  - Persistence
+  - Endpoint
+  - T1543
+  - T1543.003
+---
+
 # Persistence: Windows Services
 
 **ATT&CK:** [T1543.003](https://attack.mitre.org/techniques/T1543/003/) — Create or Modify System Process: Windows Service
@@ -25,6 +33,14 @@ Alert on every 7045 event and triage by binary path and service name plausibilit
 ## Cleanup
 
 Stop and delete the service (`sc.exe delete`), and if `ImagePath` was hijacked on a legitimate service, restore the original path rather than just deleting the service outright.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Module 5: Persistence Catalog](index.md)
+- [Playbook: Ransomware](../08-playbooks/ransomware.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

@@ -1,3 +1,8 @@
+---
+tags:
+  - Defender Suite
+---
+
 # Defender for Cloud Apps: Reading an OAuth Consent Alert
 
 This page is the "what does the alert actually show you" companion to [Module 5's OAuth Consent Grant persistence entry](../05-persistence/oauth-consent-grants.md) — read that page first for the underlying mechanism; this one is about correctly triaging the alert once it fires.
@@ -24,6 +29,13 @@ Secondary checks worth running on anything that looks disproportionate:
 ## Cleanup
 
 Same remediation as the underlying persistence entry: revoke the grant entirely via the Entra admin center or `Remove-MgOauth2PermissionGrant`, not just disabling the consenting user — the app's access is independent of that user's account state once granted.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Module 7: Microsoft Defender Suite for IR](index.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

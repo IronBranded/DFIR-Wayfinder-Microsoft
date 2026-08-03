@@ -1,3 +1,9 @@
+---
+tags:
+  - Windows Endpoint
+  - T1083
+---
+
 # Artifact: ShellBags
 
 ## What it is / where it lives
@@ -32,6 +38,15 @@ Pull `UsrClass.dat` (and `NTUSER.DAT` for older data) from the user's profile du
 ## ATT&CK mapping
 
 Data source supporting [T1083 (File and Directory Discovery)](https://attack.mitre.org/techniques/T1083/) and, in insider-threat scenarios, general proof of access to or knowledge of a specific location.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Module 1: Windows Endpoint Forensics](index.md)
+- [Playbook: Data Exfiltration](../08-playbooks/data-exfiltration.md)
+- [Playbook: Insider Threat](../08-playbooks/insider-threat.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

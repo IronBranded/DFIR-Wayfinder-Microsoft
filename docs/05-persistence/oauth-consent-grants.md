@@ -1,3 +1,11 @@
+---
+tags:
+  - Persistence
+  - Cloud
+  - T1098
+  - T1098.003
+---
+
 # Persistence: Malicious OAuth Application Consent Grants
 
 **ATT&CK:** [T1098.003](https://attack.mitre.org/techniques/T1098/003/) — Account Manipulation: Additional Cloud Roles (OAuth consent abuse falls under this broader technique family)
@@ -22,6 +30,16 @@ Review consented applications for scopes disproportionate to what the app plausi
 ## Cleanup
 
 Revoke the app's consent/grant entirely (not just disabling the user who originally approved it) via the Entra admin center or `Remove-MgOauth2PermissionGrant`, and review whether Admin Consent policies should be tightened to prevent users from self-approving high-risk permission scopes going forward.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Module 5: Persistence Catalog](index.md)
+- [Defender for Cloud Apps: Reading an OAuth Consent Alert](../07-defender-suite/defender-cloud-apps-oauth.md)
+- [Module 7: Microsoft Defender Suite for IR](../07-defender-suite/index.md)
+- [Playbook: Business Email Compromise (BEC)](../08-playbooks/business-email-compromise.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

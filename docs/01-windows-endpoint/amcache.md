@@ -1,3 +1,9 @@
+---
+tags:
+  - Windows Endpoint
+  - T1204
+---
+
 # Artifact: Amcache
 
 ## What it is / where it lives
@@ -41,6 +47,22 @@ Treat a lone Amcache hit as a starting point for further digging, not a finished
 ## ATT&CK mapping
 
 Data source supporting [T1204 (User Execution)](https://attack.mitre.org/techniques/T1204/) and, via `InventoryDriverBinary`, driver-based persistence and rootkit investigation more broadly.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Timeline Construction & Correlation](../00-foundations/timeline-construction.md)
+- [Module 1: Windows Endpoint Forensics](index.md)
+- [Artifact: Registry Hives](registry-hives.md)
+- [Artifact: Shimcache (AppCompatCache)](shimcache.md)
+- [The Entra Connect Server: A Target in Its Own Right](../06-cloud-identity/entra-connect-as-target.md)
+- [Playbook: Domain Compromise / Lateral Movement](../08-playbooks/domain-compromise.md)
+- [Playbook: Ransomware](../08-playbooks/ransomware.md)
+- [Playbook: Web Shell / Server Compromise](../08-playbooks/web-shell-compromise.md)
+- [File Carving](../anti-forensics/file-carving.md)
+- [Drill: Prefetch Triage](../practice-drills/prefetch-drill.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

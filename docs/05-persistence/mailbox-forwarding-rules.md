@@ -1,3 +1,11 @@
+---
+tags:
+  - Persistence
+  - Cloud
+  - T1114
+  - T1114.003
+---
+
 # Persistence: Mailbox Forwarding Rules & Delegate Access
 
 **ATT&CK:** [T1114.003](https://attack.mitre.org/techniques/T1114/003/) — Email Collection: Email Forwarding Rule
@@ -22,6 +30,16 @@ Alert on **any** new forwarding rule or mailbox-forwarding configuration pointin
 ## Cleanup
 
 Remove the rule or forwarding configuration (`Remove-InboxRule`, or clear `ForwardingSmtpAddress`), and review mail flow for the period the rule was active — every message that matched it should be treated as read by the attacker, which for many organizations triggers separate breach-notification analysis.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Module 5: Persistence Catalog](index.md)
+- [Advanced Hunting with KQL](../07-defender-suite/advanced-hunting-kql.md)
+- [Playbook: Business Email Compromise (BEC)](../08-playbooks/business-email-compromise.md)
+- [Case Study: Business Email Compromise, End to End](../case-studies/bec-case-study.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

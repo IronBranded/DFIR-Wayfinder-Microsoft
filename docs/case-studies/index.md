@@ -1,3 +1,8 @@
+---
+tags:
+  - Case Study
+---
+
 # Case Studies
 
 Every Playbook in this guide tells you what to pull and what questions to ask. Neither tells you what the reasoning between those questions actually looks like — why finding X sends you to check Y specifically, how you catch a timestamp lying to you, or how much corroboration is actually enough before you act. That connective reasoning is the investigative mindset, and a checklist structure can't model it by itself. These case studies exist to show it directly: one continuous investigation each, narrated at the point-by-point level, including the moment a naive read of the data would have led somewhere wrong.
@@ -13,3 +18,11 @@ Both case studies are original and synthetic — built specifically to exercise 
 
 !!! tip "Read these after, not instead of, the reference pages"
     Every specific fact used in these narratives — an event ID, a GUID, a retention window — is explained properly on the page it links to. These case studies assume you've been there already; their job is showing what it looks like to *use* that knowledge under time pressure, not to re-teach it.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Enterprise DFIR Field Guide](../index.md)
+
+<!-- BACKLINKS:END -->
+

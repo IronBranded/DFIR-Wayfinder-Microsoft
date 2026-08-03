@@ -1,3 +1,8 @@
+---
+tags:
+  - Practice Drill
+---
+
 # Drill: Registry Persistence Triage
 
 ## The scenario
@@ -25,3 +30,12 @@
     The other five entries are all real, recognizable software (OneDrive, Windows Security, Teams, Adobe, Realtek audio) launching their own signed executables directly from standard install paths — exactly the baseline described in [Registry Run / RunOnce Keys](../05-persistence/registry-run-keys.md).
 
     **What to do next:** pull and read `update.vbs` itself, and check [Event Log](../01-windows-endpoint/event-log-key-ids.md) Sysmon Event ID 13 (registry value set) for when this Run key value was actually created — that timestamp is your anchor for scoping how long this persistence has been active.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Persistence: Registry Run / RunOnce Keys](../05-persistence/registry-run-keys.md)
+- [Practice Drills](index.md)
+
+<!-- BACKLINKS:END -->
+

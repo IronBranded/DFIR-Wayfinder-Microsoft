@@ -1,3 +1,8 @@
+---
+tags:
+  - Cloud Identity
+---
+
 # Module 6: Cloud Identity (Entra ID / Hybrid)
 
 Covers Microsoft Entra ID (formerly Azure AD) sign-in and audit telemetry, Conditional Access, Identity Protection, and — critically for most enterprises — the mechanics of **hybrid identity**, where an on-prem Active Directory account and its cloud counterpart are two records that must both be handled correctly during an incident.
@@ -41,6 +46,29 @@ This invalidates every refresh token issued to every application for that user, 
     4. Review and remove any [persistence](../05-persistence/index.md) the attacker may have added — OAuth grants, mailbox rules, MFA methods — before re-enabling
 
 Access tokens already issued before revocation remain valid until they naturally expire (commonly up to an hour) — revocation stops new token issuance, it does not retroactively kill tokens already in an attacker's hands. Plan containment (network/Conditional-Access blocking) accordingly if that window matters for your scenario.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Evidence Handling & Chain of Custody — for Enterprise IR](../00-foundations/evidence-handling.md)
+- [Order of Volatility](../00-foundations/order-of-volatility.md)
+- [Persistence: Backdoor App Registrations & Service Principal Credentials](../05-persistence/backdoor-app-registrations.md)
+- [Persistence: Break-Glass / Emergency-Access Account Abuse](../05-persistence/break-glass-abuse.md)
+- [Persistence: Federation Trust Abuse ("Golden SAML")](../05-persistence/golden-saml.md)
+- [Module 5: Persistence Catalog](../05-persistence/index.md)
+- [Persistence: Mailbox Forwarding Rules & Delegate Access](../05-persistence/mailbox-forwarding-rules.md)
+- [Hybrid Sync Mechanics](hybrid-sync-mechanics.md)
+- [Advanced Hunting with KQL](../07-defender-suite/advanced-hunting-kql.md)
+- [Playbook: Business Email Compromise (BEC)](../08-playbooks/business-email-compromise.md)
+- [Playbook: Data Exfiltration](../08-playbooks/data-exfiltration.md)
+- [Playbook: Domain Compromise / Lateral Movement](../08-playbooks/domain-compromise.md)
+- [Module 8: Investigation Playbooks](../08-playbooks/index.md)
+- [Playbook: Phishing (Initial Access)](../08-playbooks/phishing.md)
+- [Case Study: Business Email Compromise, End to End](../case-studies/bec-case-study.md)
+- [Enterprise DFIR Field Guide](../index.md)
+- [Windows IR Quick Reference](../quick-reference/windows-ir-poster.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

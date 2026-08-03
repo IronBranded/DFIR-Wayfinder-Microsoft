@@ -1,3 +1,9 @@
+---
+tags:
+  - Active Directory
+  - T1649
+---
+
 # AD Certificate Services (AD CS) Abuse
 
 ## Why this belongs alongside DCSync and Golden Ticket
@@ -40,6 +46,15 @@ Certipy (the standard open-source enumeration tool for this attack surface) is w
 ## ATT&CK mapping
 
 [T1649 (Steal or Forge Authentication Certificates)](https://attack.mitre.org/techniques/T1649/).
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [ATT&CK Coverage Map](../00-foundations/attack-coverage-map.md)
+- [Module 2: Active Directory & Domain Controllers](index.md)
+- [Glossary](../glossary.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

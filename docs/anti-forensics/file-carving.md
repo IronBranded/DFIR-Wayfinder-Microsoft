@@ -1,3 +1,8 @@
+---
+tags:
+  - Anti-Forensics
+---
+
 # File Carving
 
 ## What it is, and why it works at all
@@ -41,6 +46,14 @@ Always image first — never carve against a live, writable disk. A drive with u
 ## Turning this into report language
 
 Carved output on its own is weak evidence — "a JPEG matching this signature was recovered from unallocated space" doesn't establish when it was created, by whom, or that it's even related to the incident. What makes a carved file reportable is corroboration: a recovered file whose content matches a hash already seen elsewhere in the investigation (an [Amcache](../01-windows-endpoint/amcache.md) SHA-1, a file named in [Prefetch](../01-windows-endpoint/prefetch.md)) moves from "a curiosity found on disk" to "confirmed recovery of the deleted tool referenced in Finding 2." State the corroboration explicitly — per [Reporting & Communication](../00-foundations/reporting-and-communication.md), a finding is only as strong as what independently confirms it.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Anti-Forensics & Data Recovery](index.md)
+- [Memory-Based File Recovery](memory-based-file-recovery.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

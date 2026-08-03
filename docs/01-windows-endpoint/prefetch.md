@@ -1,3 +1,10 @@
+---
+tags:
+  - Windows Endpoint
+  - T1070
+  - T1204
+---
+
 # Artifact: Prefetch
 
 ## What it is / where it lives
@@ -43,6 +50,26 @@ Prefetch isn't a technique itself — it's a **data source** supporting detectio
 
 !!! tip "Practice this"
     [Prefetch Triage](../practice-drills/prefetch-drill.md) puts nine simulated `PECmd` entries in front of you and asks you to find the staged tooling yourself before revealing the answer.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Timeline Construction & Correlation](../00-foundations/timeline-construction.md)
+- [Artifact: Amcache](amcache.md)
+- [Module 1: Windows Endpoint Forensics](index.md)
+- [Artifact: Shimcache (AppCompatCache)](shimcache.md)
+- [Module 4: PowerShell Forensics](../04-powershell-forensics/index.md)
+- [PowerShell Forensics: Logging](../04-powershell-forensics/powershell-logging.md)
+- [The Entra Connect Server: A Target in Its Own Right](../06-cloud-identity/entra-connect-as-target.md)
+- [Playbook: Domain Compromise / Lateral Movement](../08-playbooks/domain-compromise.md)
+- [Playbook: Ransomware](../08-playbooks/ransomware.md)
+- [Playbook: Web Shell / Server Compromise](../08-playbooks/web-shell-compromise.md)
+- [File Carving](../anti-forensics/file-carving.md)
+- [Case Study: Domain Compromise, End to End](../case-studies/domain-compromise-case-study.md)
+- [Practice Drills](../practice-drills/index.md)
+- [Drill: Prefetch Triage](../practice-drills/prefetch-drill.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

@@ -1,3 +1,9 @@
+---
+tags:
+  - Windows Endpoint
+  - T1204
+---
+
 # Artifact: UserAssist
 
 ## What it is / where it lives
@@ -32,6 +38,13 @@ Pull `NTUSER.DAT` from the relevant user profile during triage. Eric Zimmerman's
 ## ATT&CK mapping
 
 Data source supporting [T1204 (User Execution)](https://attack.mitre.org/techniques/T1204/) — specifically the GUI-initiated subset of execution evidence.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Module 1: Windows Endpoint Forensics](index.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

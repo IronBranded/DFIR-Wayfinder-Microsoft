@@ -1,3 +1,11 @@
+---
+tags:
+  - Active Directory
+  - T1558
+  - T1558.001
+  - T1558.002
+---
+
 # Golden Ticket & Silver Ticket Indicators
 
 Both techniques forge a Kerberos ticket rather than obtaining one through legitimate authentication — the difference is which key signs the forgery, and that difference changes both the blast radius and how visible the forgery is.
@@ -24,6 +32,16 @@ Look for **Event ID 4769 (Kerberos service ticket requested) with no correspondi
 ## ATT&CK mapping
 
 [T1558.001 (Golden Ticket)](https://attack.mitre.org/techniques/T1558/001/) / [T1558.002 (Silver Ticket)](https://attack.mitre.org/techniques/T1558/002/).
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [ATT&CK Coverage Map](../00-foundations/attack-coverage-map.md)
+- [Module 2: Active Directory & Domain Controllers](index.md)
+- [Defender for Identity: Mapping Alerts to What You Already Know](../07-defender-suite/defender-for-identity-mapping.md)
+- [Glossary](../glossary.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

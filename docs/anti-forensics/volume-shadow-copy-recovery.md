@@ -1,3 +1,8 @@
+---
+tags:
+  - Anti-Forensics
+---
+
 # Volume Shadow Copy Recovery
 
 ## What it is, and why it's a recovery goldmine
@@ -44,6 +49,15 @@ Shadow copies are created on a schedule (or triggered by specific system events,
 ## Turning this into report language
 
 "A prior version of the file was reviewed" understates what actually happened and how it's justified. "A Volume Shadow Copy created at [timestamp], predating the attacker's first confirmed access by approximately six hours, was mounted and found to contain an intact copy of `Groups.xml` without the malicious GPP modification present in the current version — confirming the GPO tampering occurred after this snapshot and providing a verified pre-compromise baseline" ties the recovery technique directly to a specific, dated conclusion, which is the difference between "we found an old copy" and a defensible timeline anchor.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Anti-Forensics & Data Recovery](index.md)
+- [Log & Artifact Recovery](log-artifact-recovery.md)
+- [Glossary](../glossary.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

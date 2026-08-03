@@ -1,3 +1,9 @@
+---
+tags:
+  - Memory Forensics
+  - T1055
+---
+
 # Thread Analysis
 
 ## What it is, and why it matters for DFIR specifically
@@ -32,6 +38,18 @@ This also matters for **scoping**: a process with fifteen threads where fourteen
 ## ATT&CK mapping
 
 Supports detection of the same techniques as [Injected Code Detection](injected-code-detection.md) and [Injection Techniques](injection-techniques.md) — [T1055](https://attack.mitre.org/techniques/T1055/) and its sub-techniques — from the thread level specifically rather than the process-memory level.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [EPROCESS Internals](eprocess-internals.md)
+- [Module 3: Windows Memory Forensics](index.md)
+- [Malware Triage Methodology](malware-triage-methodology.md)
+- [Mutex (Mutant) Analysis](mutex-analysis.md)
+- [Memory-Based File Recovery](../anti-forensics/memory-based-file-recovery.md)
+- [Glossary](../glossary.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

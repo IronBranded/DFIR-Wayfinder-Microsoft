@@ -1,3 +1,8 @@
+---
+tags:
+  - Defender Suite
+---
+
 # Advanced Hunting with KQL
 
 Defender XDR's Advanced Hunting feature queries a shared schema of tables — `DeviceProcessEvents`, `DeviceNetworkEvents`, `EmailEvents`, `IdentityLogonEvents`, and others — using Kusto Query Language (KQL). This page is a set of starting-point queries tied directly to earlier modules, not a KQL tutorial; treat these as templates to adapt against your own environment's baseline.
@@ -87,6 +92,16 @@ This is a genuinely different kind of query than the single-table examples above
 - **Always scope a time window explicitly** rather than relying on the UI default — an unscoped query against a large tenant is slow and easy to accidentally run against far more data than intended.
 - **Cross-table hunts need a real join key** — `DeviceId` and `Timestamp` are the most reliable anchors when correlating, for example, a `DeviceNetworkEvents` connection back to the `DeviceProcessEvents` record that made it.
 - **Schema and table names change.** Microsoft has renamed products and adjusted schemas before (Defender ATP → Defender for Endpoint being the most visible example) — check the in-portal schema reference before assuming a column name from an older query still applies.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Detection Engineering: From Hunt Query to Standing Detection](detection-engineering.md)
+- [Module 7: Microsoft Defender Suite for IR](index.md)
+- [Glossary](../glossary.md)
+- [DNS Analysis](../network-analysis/dns-analysis.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

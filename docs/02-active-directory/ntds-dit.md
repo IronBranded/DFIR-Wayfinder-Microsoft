@@ -1,3 +1,10 @@
+---
+tags:
+  - Active Directory
+  - T1003
+  - T1003.003
+---
+
 # Artifact: NTDS.dit
 
 ## What it is / where it lives
@@ -30,6 +37,14 @@ For legitimate offline analysis (not as an attacker would, but as an investigato
 ## ATT&CK mapping
 
 [T1003.003 (OS Credential Dumping: NTDS)](https://attack.mitre.org/techniques/T1003/003/).
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Module 2: Active Directory & Domain Controllers](index.md)
+- [krbtgt: What It Is, and Why It Gets Reset Twice](krbtgt.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

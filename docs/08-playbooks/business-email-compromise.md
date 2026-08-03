@@ -1,3 +1,8 @@
+---
+tags:
+  - Playbook
+---
+
 # Playbook: Business Email Compromise (BEC)
 
 ## Trigger
@@ -39,6 +44,17 @@ Re-enable the account only after the above is confirmed complete, with heightene
 ## Lessons learned
 
 Was MFA actually enforced for this account, or was it exempted/using a legacy auth protocol that bypasses it? Would Conditional Access requiring a compliant or hybrid-joined device have blocked the initial sign-in? If a financial fraud attempt succeeded even partially, that's a process gap (payment-detail changes should require out-of-band verbal verification) as much as a technical one.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Automated Investigation & Remediation: What It Does, and Doesn't, Do](../07-defender-suite/automated-investigation-remediation.md)
+- [Module 8: Investigation Playbooks](index.md)
+- [Playbook: Phishing (Initial Access)](phishing.md)
+- [Case Study: Business Email Compromise, End to End](../case-studies/bec-case-study.md)
+- [Case Studies](../case-studies/index.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

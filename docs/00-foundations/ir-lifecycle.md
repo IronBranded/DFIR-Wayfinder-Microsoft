@@ -1,3 +1,8 @@
+---
+tags:
+  - Foundations
+---
+
 # The Incident Response Lifecycle
 
 Two frameworks describe the same underlying process. You'll see both cited in the field — know them as synonyms, not competitors.
@@ -38,6 +43,21 @@ Treating Containment, Eradication, and Recovery as one blurred step is how organ
 
 !!! success "Baseline habit"
     Before closing an incident, walk through all six PICERL phases by name and confirm each one actually happened — not just that the immediate symptom stopped.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Module 0: Foundations](index.md)
+- [Automated Investigation & Remediation: What It Does, and Doesn't, Do](../07-defender-suite/automated-investigation-remediation.md)
+- [Playbook: Business Email Compromise (BEC)](../08-playbooks/business-email-compromise.md)
+- [Playbook: Data Exfiltration](../08-playbooks/data-exfiltration.md)
+- [Playbook: Domain Compromise / Lateral Movement](../08-playbooks/domain-compromise.md)
+- [Module 8: Investigation Playbooks](../08-playbooks/index.md)
+- [Playbook: Ransomware](../08-playbooks/ransomware.md)
+- [Playbook: Web Shell / Server Compromise](../08-playbooks/web-shell-compromise.md)
+- [Glossary](../glossary.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

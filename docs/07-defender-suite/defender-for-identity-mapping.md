@@ -1,3 +1,8 @@
+---
+tags:
+  - Defender Suite
+---
+
 # Defender for Identity: Mapping Alerts to What You Already Know
 
 Defender for Identity (DFI) watches Domain Controller traffic and logs directly, and its named alerts map cleanly onto the [Active Directory attack techniques](../02-active-directory/index.md) already covered in this guide — knowing the mapping means an alert firing tells you exactly which reference page to pull up.
@@ -15,6 +20,14 @@ DFI's DCSync detection keys primarily off **the identity a replication request i
 ## Practical note on alert latency
 
 DFI alerts typically surface within a few minutes of the underlying activity, not instantly — factor a short delay into timeline reconstruction when correlating a DFI alert timestamp against other logs (Security 4662, [replication metadata](../02-active-directory/replication-metadata.md)) for the same event.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Module 7: Microsoft Defender Suite for IR](index.md)
+- [Glossary](../glossary.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

@@ -1,3 +1,8 @@
+---
+tags:
+  - Defender Suite
+---
+
 # Module 7: Microsoft Defender Suite for IR
 
 "Microsoft Defender" is six differently-licensed products that share a brand name — knowing which one you're looking at, and what it does and doesn't cover, matters for scoping an investigation correctly.
@@ -28,6 +33,18 @@ An organization running only base Windows with Defender AV — no E5, no MDE —
 - [x] [Automated Investigation & Remediation](automated-investigation-remediation.md) — what it does on your behalf, and what it doesn't
 
 For Unified Audit Log / Purview retention tiers, see [Module 6](../06-cloud-identity/sign-in-vs-audit-logs.md) — the same retention picture applies to Defender-adjacent evidence and isn't repeated here.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Persistence: Malicious OAuth Application Consent Grants](../05-persistence/oauth-consent-grants.md)
+- [Playbook: Data Exfiltration](../08-playbooks/data-exfiltration.md)
+- [Playbook: Insider Threat](../08-playbooks/insider-threat.md)
+- [Playbook: Phishing (Initial Access)](../08-playbooks/phishing.md)
+- [Glossary](../glossary.md)
+- [Enterprise DFIR Field Guide](../index.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

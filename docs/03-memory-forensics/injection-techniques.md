@@ -1,3 +1,12 @@
+---
+tags:
+  - Memory Forensics
+  - T1055
+  - T1055.001
+  - T1055.012
+  - T1055.013
+---
+
 # Injection Techniques: What Each Looks Like in Memory
 
 Three distinct techniques for running malicious code under the identity of a legitimate process, each leaving a different signature for [`malfind`/`ldrmodules`/`vadinfo`](injected-code-detection.md) to find.
@@ -31,6 +40,17 @@ A DLL is mapped into a target process's memory manually — resolving imports, f
 ## ATT&CK mapping
 
 [T1055.012 (Process Hollowing)](https://attack.mitre.org/techniques/T1055/012/) / [T1055.013 (Process Doppelgänging)](https://attack.mitre.org/techniques/T1055/013/) / [T1055.001 (Dynamic-link Library Injection)](https://attack.mitre.org/techniques/T1055/001/).
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [ATT&CK Coverage Map](../00-foundations/attack-coverage-map.md)
+- [Module 3: Windows Memory Forensics](index.md)
+- [Finding Injected Code: malfind, ldrmodules, vadinfo](injected-code-detection.md)
+- [Thread Analysis](thread-analysis.md)
+- [Drill: Process Tree Triage](../practice-drills/process-tree-drill.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

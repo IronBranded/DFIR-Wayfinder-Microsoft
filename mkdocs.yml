@@ -71,6 +71,20 @@ markdown_extensions:
 
 plugins:
   - search
+  - tags
+  - git-revision-date-localized:
+      type: date
+      enable_creation_date: false
+      fallback_to_build_date: true
+  - to-pdf:
+      enabled_if_env: ENABLE_PDF_EXPORT
+      output_path: pdf/enterprise-dfir-field-guide.pdf
+      cover_title: Enterprise DFIR Field Guide
+      cover_subtitle: Windows Endpoints, Memory, Active Directory, and Hybrid/Cloud Identity
+      toc_title: Contents
+      toc_level: 2
+      exclude_pages:
+        - tags/
 
 nav:
   - Home: index.md
@@ -192,3 +206,4 @@ nav:
       - "Drill: Timeline Correlation": practice-drills/timeline-correlation-drill.md
   - Windows IR Quick Reference: quick-reference/windows-ir-poster.md
   - Glossary: glossary.md
+  - Tags Index: tags.md

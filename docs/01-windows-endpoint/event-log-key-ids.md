@@ -1,3 +1,8 @@
+---
+tags:
+  - Windows Endpoint
+---
+
 # Event Log Key IDs Reference
 
 Windows generates enormous log volume; almost none of it matters most of the time. This page is the short list worth knowing by number, organized by what question each ID answers. Native Security/System log auditing requires the right audit policy (or GPO) to be enabled — several of these are silent by default. Sysmon requires deliberate installation and configuration but, once present, is usually richer than the native equivalent.
@@ -58,6 +63,21 @@ An attacker clearing logs is one of the loudest possible signals precisely becau
 
 !!! tip "Practice this"
     [Event Log Story](../practice-drills/event-log-drill.md) gives you six raw event IDs, no narration — reconstruct what happened before revealing the answer.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Module 1: Windows Endpoint Forensics](index.md)
+- [Log & Artifact Recovery](../anti-forensics/log-artifact-recovery.md)
+- [Glossary](../glossary.md)
+- [DNS Analysis](../network-analysis/dns-analysis.md)
+- [Practice Drills](../practice-drills/index.md)
+- [Drill: PowerShell Decode](../practice-drills/powershell-decode-drill.md)
+- [Drill: Prefetch Triage](../practice-drills/prefetch-drill.md)
+- [Drill: Registry Persistence Triage](../practice-drills/registry-persistence-drill.md)
+- [Windows IR Quick Reference](../quick-reference/windows-ir-poster.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

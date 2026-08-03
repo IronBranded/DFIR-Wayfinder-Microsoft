@@ -1,3 +1,13 @@
+---
+tags:
+  - Persistence
+  - Endpoint
+  - T1546
+  - T1546.015
+  - T1574
+  - T1574.001
+---
+
 # Persistence: COM Hijacking & DLL Search-Order Hijacking
 
 Two different mechanisms, grouped here because both exploit the same underlying weakness: Windows trusting a lookup (a registry pointer, or a search path) without verifying what it resolves to actually belongs to the legitimate vendor.
@@ -26,6 +36,13 @@ When an application loads a DLL by name rather than full path, Windows searches 
 ## Cleanup
 
 Remove the hijacked `CLSID` override or the planted DLL, and verify the legitimate `HKLM` COM registration or system DLL is intact and unmodified before considering the host clean.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Module 5: Persistence Catalog](index.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

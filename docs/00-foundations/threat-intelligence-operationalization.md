@@ -1,3 +1,8 @@
+---
+tags:
+  - Foundations
+---
+
 # Operationalizing Threat Intelligence
 
 ## The gap this closes
@@ -30,6 +35,14 @@ A report states: *"The actor gains initial access via phishing, uses `comsvcs.dl
 - IOC-level: any specific hashes/domains from the report, searched immediately.
 - TTP-level: this maps directly to [LSASS Memory Analysis](../03-memory-forensics/lsass-memory-analysis.md)'s `comsvcs.dll` detection and [DCSync Detection](../02-active-directory/dcsync-detection.md)'s GUID-based hunt — confirm both are actually deployed as standing detections (see [Detection Engineering](../07-defender-suite/detection-engineering.md)), not just documented as possible.
 - Behavioral-level: the *speed* of the reported chain (single session, phishing to DCSync) becomes its own detection opportunity — a [correlation rule](../07-defender-suite/detection-engineering.md) alerting specifically on LSASS access followed by DCSync activity from the same host within a short window is a stronger, more specific detection than either technique alone, and it's a rule this specific report just told you is worth building.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Module 0: Foundations](index.md)
+- [Detection Engineering: From Hunt Query to Standing Detection](../07-defender-suite/detection-engineering.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

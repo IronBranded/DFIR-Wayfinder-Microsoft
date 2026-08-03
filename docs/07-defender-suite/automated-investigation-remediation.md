@@ -1,3 +1,8 @@
+---
+tags:
+  - Defender Suite
+---
+
 # Automated Investigation & Remediation: What It Does, and Doesn't, Do
 
 Defender for Endpoint's Automated Investigation and Remediation (AIR) automatically investigates supported alert types, determines a verdict, and — depending on your configured automation level — can act on that verdict without waiting for an analyst.
@@ -16,6 +21,15 @@ Defender for Endpoint's Automated Investigation and Remediation (AIR) automatica
 
 !!! tip "How to think about AIR in practice"
     Treat it as a force multiplier for the clear cases, not a substitute for the playbooks in this guide — it buys back analyst time on high-confidence, single-host findings specifically so there's more bandwidth for the ambiguous, cross-system investigations that still need a person walking through them deliberately.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Detection Engineering: From Hunt Query to Standing Detection](detection-engineering.md)
+- [Module 7: Microsoft Defender Suite for IR](index.md)
+- [Glossary](../glossary.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

@@ -61,3 +61,41 @@
 .md-typeset .task-list-item [type="checkbox"] {
   margin-right: 0.5em;
 }
+
+/* PDF export (mkdocs-to-pdf, WeasyPrint) renders using the print media
+   type. Force light, ink-friendly colors here regardless of which mode
+   a reader last had toggled on the live site - a dark background is a
+   poor default for something meant to be printed. Mermaid diagrams are
+   not rendered by this pipeline (no JS execution) and will appear as
+   their raw source instead; this is a known, documented limitation. */
+@media print {
+  body, .md-typeset {
+    background: #ffffff !important;
+    color: #1a1f27 !important;
+  }
+  .md-typeset .admonition.success,
+  .md-typeset details.success {
+    border-color: #0a7d6f !important;
+  }
+  .md-typeset .admonition.success > .admonition-title,
+  .md-typeset details.success > summary {
+    background-color: rgba(10, 125, 111, 0.08) !important;
+  }
+  .md-typeset .admonition.danger,
+  .md-typeset details.danger {
+    border-color: #a3590a !important;
+  }
+  .md-typeset .admonition.danger > .admonition-title,
+  .md-typeset details.danger > summary {
+    background-color: rgba(163, 89, 10, 0.08) !important;
+  }
+  .poster-grid .poster-card {
+    background: #f6f8fa !important;
+    border-color: #d7dce2 !important;
+    break-inside: avoid;
+  }
+  pre, code {
+    background: #f2f4f7 !important;
+    color: #1a1f27 !important;
+  }
+}

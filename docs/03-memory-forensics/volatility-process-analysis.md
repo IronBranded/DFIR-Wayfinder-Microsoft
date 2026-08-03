@@ -1,3 +1,8 @@
+---
+tags:
+  - Memory Forensics
+---
+
 # Process Analysis: Finding What's Hidden
 
 ## Two fundamentally different ways to enumerate processes
@@ -26,6 +31,19 @@ Any PID present in `psscan` output but **absent from `pslist`** is either a proc
 
 !!! danger "Red flag"
     Any PID appearing in `psscan` but not `pslist`, especially one with active network connections or open handles to sensitive processes like `lsass.exe`.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Memory Acquisition](acquisition.md)
+- [EPROCESS Internals](eprocess-internals.md)
+- [Module 3: Windows Memory Forensics](index.md)
+- [Malware Triage Methodology](malware-triage-methodology.md)
+- [Mutex (Mutant) Analysis](mutex-analysis.md)
+- [Network Artifacts in Memory](network-memory-artifacts.md)
+- [Glossary](../glossary.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

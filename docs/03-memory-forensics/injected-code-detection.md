@@ -1,3 +1,9 @@
+---
+tags:
+  - Memory Forensics
+  - T1055
+---
+
 # Finding Injected Code: malfind, ldrmodules, vadinfo
 
 Three plugins that work together as a workflow — broad flag, specific cross-reference, detailed inspection — rather than three independent tools.
@@ -30,6 +36,21 @@ Once `malfind` or `ldrmodules` has flagged something, `vadinfo` gives you the fu
 ## ATT&CK mapping
 
 [T1055 (Process Injection)](https://attack.mitre.org/techniques/T1055/) broadly; see [Injection Techniques](injection-techniques.md) for how specific sub-techniques map to what you'll actually see with these plugins.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [EPROCESS Internals](eprocess-internals.md)
+- [Module 3: Windows Memory Forensics](index.md)
+- [Injection Techniques: What Each Looks Like in Memory](injection-techniques.md)
+- [LSASS Memory Analysis & Credential Theft](lsass-memory-analysis.md)
+- [Malware Triage Methodology](malware-triage-methodology.md)
+- [Thread Analysis](thread-analysis.md)
+- [Memory-Based File Recovery](../anti-forensics/memory-based-file-recovery.md)
+- [Glossary](../glossary.md)
+- [Drill: Process Tree Triage](../practice-drills/process-tree-drill.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

@@ -1,3 +1,8 @@
+---
+tags:
+  - Cloud Identity
+---
+
 # Sign-In Logs vs. Audit Logs (and the Retention Trap Between Them)
 
 ## Two different questions, two different logs
@@ -22,6 +27,18 @@ The practical implication: **if you're only relying on the Entra admin center's 
 
 !!! danger "Red flag (operational, not investigative)"
     Discovering during an active incident that Diagnostic Settings export was never configured, and the relevant sign-in activity is already outside the native 7/30-day window. This is a preparation gap, not a detection one — fix it before you need it, not during.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Timeline Construction & Correlation](../00-foundations/timeline-construction.md)
+- [Module 6: Cloud Identity (Entra ID / Hybrid)](index.md)
+- [Module 7: Microsoft Defender Suite for IR](../07-defender-suite/index.md)
+- [Case Study: Business Email Compromise, End to End](../case-studies/bec-case-study.md)
+- [Case Studies](../case-studies/index.md)
+- [Glossary](../glossary.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

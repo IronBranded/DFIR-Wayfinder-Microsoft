@@ -1,3 +1,9 @@
+---
+tags:
+  - Active Directory
+  - T1098
+---
+
 # AdminSDHolder / SDProp Abuse
 
 ## The mechanism
@@ -27,6 +33,19 @@ Restore `AdminSDHolder`'s ACL to its correct baseline — not just the individua
 
 !!! tip "Practice this"
     [Event Log Story](../practice-drills/event-log-drill.md) chains a DCSync event straight into an AdminSDHolder modification — reconstruct the full sequence from six raw events before checking the answer.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [ATT&CK Coverage Map](../00-foundations/attack-coverage-map.md)
+- [ACL & Delegation Abuse](acl-delegation-abuse.md)
+- [Module 2: Active Directory & Domain Controllers](index.md)
+- [The Entra Connect Server: A Target in Its Own Right](../06-cloud-identity/entra-connect-as-target.md)
+- [Drill: Event Log Story](../practice-drills/event-log-drill.md)
+- [Practice Drills](../practice-drills/index.md)
+- [Drill: PowerShell Decode](../practice-drills/powershell-decode-drill.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

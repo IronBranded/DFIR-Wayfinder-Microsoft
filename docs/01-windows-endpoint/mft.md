@@ -1,3 +1,10 @@
+---
+tags:
+  - Windows Endpoint
+  - T1070
+  - T1070.006
+---
+
 # Artifact: $MFT & Timestomping
 
 ## What it is / where it lives
@@ -34,6 +41,22 @@ MFTECmd.exe -f C:\triage\$MFT --csv C:\triage\output
 ## ATT&CK mapping
 
 Directly maps to [T1070.006 (Indicator Removal: Timestomp)](https://attack.mitre.org/techniques/T1070/006/). More broadly, `$MFT` is a foundational **data source** for filesystem timeline reconstruction across nearly every other technique in this guide.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [ATT&CK Coverage Map](../00-foundations/attack-coverage-map.md)
+- [Timeline Construction & Correlation](../00-foundations/timeline-construction.md)
+- [Module 1: Windows Endpoint Forensics](index.md)
+- [Artifact: Shimcache (AppCompatCache)](shimcache.md)
+- [Artifact: USN Journal](usn-journal.md)
+- [Alternate Data Streams (ADS)](../anti-forensics/alternate-data-streams.md)
+- [File Carving](../anti-forensics/file-carving.md)
+- [Anti-Forensics & Data Recovery](../anti-forensics/index.md)
+- [Memory-Based File Recovery](../anti-forensics/memory-based-file-recovery.md)
+- [Glossary](../glossary.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

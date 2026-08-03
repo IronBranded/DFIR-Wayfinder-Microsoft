@@ -1,3 +1,10 @@
+---
+tags:
+  - Active Directory
+  - T1003
+  - T1003.006
+---
+
 # DCSync Detection
 
 ## The mechanism
@@ -32,6 +39,26 @@ Disable the source account immediately, and specifically determine whether [krbt
 ## ATT&CK mapping
 
 [T1003.006 (OS Credential Dumping: DCSync)](https://attack.mitre.org/techniques/T1003/006/).
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [ATT&CK Coverage Map](../00-foundations/attack-coverage-map.md)
+- [Reporting & Communication](../00-foundations/reporting-and-communication.md)
+- [Operationalizing Threat Intelligence](../00-foundations/threat-intelligence-operationalization.md)
+- [Timeline Construction & Correlation](../00-foundations/timeline-construction.md)
+- [AD Certificate Services (AD CS) Abuse](adcs-abuse.md)
+- [Module 2: Active Directory & Domain Controllers](index.md)
+- [krbtgt: What It Is, and Why It Gets Reset Twice](krbtgt.md)
+- [Artifact: NTDS.dit](ntds-dit.md)
+- [The Entra Connect Server: A Target in Its Own Right](../06-cloud-identity/entra-connect-as-target.md)
+- [Defender for Identity: Mapping Alerts to What You Already Know](../07-defender-suite/defender-for-identity-mapping.md)
+- [Case Study: Domain Compromise, End to End](../case-studies/domain-compromise-case-study.md)
+- [Case Studies](../case-studies/index.md)
+- [Glossary](../glossary.md)
+- [Drill: Event Log Story](../practice-drills/event-log-drill.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

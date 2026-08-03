@@ -1,3 +1,10 @@
+---
+tags:
+  - Anti-Forensics
+  - T1564
+  - T1564.004
+---
+
 # Alternate Data Streams (ADS)
 
 ## What it is, and why it exists at all
@@ -45,6 +52,15 @@ Get-Content -Path .\suspicious.txt -Stream <stream-name>
 ## ATT&CK mapping
 
 [T1564.004 (Hide Artifacts: NTFS File Attributes)](https://attack.mitre.org/techniques/T1564/004/).
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [ATT&CK Coverage Map](../00-foundations/attack-coverage-map.md)
+- [Anti-Forensics & Data Recovery](index.md)
+- [Glossary](../glossary.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

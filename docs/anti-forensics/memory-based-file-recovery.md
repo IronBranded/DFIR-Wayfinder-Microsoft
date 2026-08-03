@@ -1,3 +1,8 @@
+---
+tags:
+  - Anti-Forensics
+---
+
 # Memory-Based File Recovery
 
 ## What it is, and why memory succeeds where disk fails
@@ -31,6 +36,13 @@ This is a targeted technique, not a broad sweep — you reach for it once [proce
 ## Turning this into report language
 
 "The malicious file could not be recovered from disk" is where a lot of investigations would stop — and it's not actually the end of the story if a memory capture exists. "Although the dropped payload was deleted from disk prior to acquisition (confirmed absent via [MFT](../01-windows-endpoint/mft.md) review), the memory capture of PID 4412 retained the mapped file content, recovered via `windows.dumpfiles` and confirmed to match the SHA-256 hash associated with [known-malicious indicator]" turns a dead end into a confirmed technical finding, and is exactly the kind of detail that justifies why memory acquisition mattered enough to prioritize in the first place.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Anti-Forensics & Data Recovery](index.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

@@ -1,3 +1,8 @@
+---
+tags:
+  - Anti-Forensics
+---
+
 # Log & Artifact Recovery
 
 ## What survives log clearing, and why
@@ -32,6 +37,16 @@ Priority order when you discover a cleared or gapped log: check for a Volume Sha
 ## Turning this into report language
 
 "Log records could not be located for the period in question" is a dead end in a report — it invites the reader to wonder whether you looked hard enough. "The Security log was cleared at [timestamp] (Event ID 1102); records for the preceding six hours were recovered via chunk-carving of unallocated space, recovering 340 of an estimated 412 events based on `EventRecordID` continuity, sufficient to reconstruct the attacker's authentication sequence" is a finding that shows the work and states its own completeness honestly — which per [Reporting & Communication](../00-foundations/reporting-and-communication.md) is exactly the level of specificity a technical reader needs to trust the conclusion built on top of it.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [ATT&CK Coverage Map](../00-foundations/attack-coverage-map.md)
+- [Anti-Forensics & Data Recovery](index.md)
+- [Volume Shadow Copy Recovery](volume-shadow-copy-recovery.md)
+- [Glossary](../glossary.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

@@ -1,3 +1,8 @@
+---
+tags:
+  - Cloud Identity
+---
+
 # Identity Protection Risk Signals
 
 Microsoft Entra ID Protection (P2) evaluates every sign-in and every user against a set of risk detections, surfacing a risk level that can drive automated response through risk-based Conditional Access policies.
@@ -18,6 +23,13 @@ Each signal contributes to an overall risk level (low/medium/high) for the sign-
 
 !!! danger "Red flag"
     Multiple risk signals firing together for the same sign-in or the same user in a short window — the combination is a much stronger indicator than any single signal alone.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Module 6: Cloud Identity (Entra ID / Hybrid)](index.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

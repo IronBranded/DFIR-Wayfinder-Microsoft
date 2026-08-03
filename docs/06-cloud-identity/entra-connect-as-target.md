@@ -1,3 +1,10 @@
+---
+tags:
+  - Cloud Identity
+  - T1003
+  - T1003.006
+---
+
 # The Entra Connect Server: A Target in Its Own Right
 
 ## Why this page exists
@@ -34,6 +41,14 @@ Domain Controllers are reflexively treated as tier-0 infrastructure — locked d
 ## ATT&CK mapping
 
 [T1003.006 (DCSync)](https://attack.mitre.org/techniques/T1003/006/) — the mechanism is identical regardless of which asset the attacker is standing on when they invoke it.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Module 6: Cloud Identity (Entra ID / Hybrid)](index.md)
+- [Glossary](../glossary.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

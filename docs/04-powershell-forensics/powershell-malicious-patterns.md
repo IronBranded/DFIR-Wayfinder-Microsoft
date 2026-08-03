@@ -1,3 +1,10 @@
+---
+tags:
+  - PowerShell
+  - T1059
+  - T1059.001
+---
+
 # PowerShell Forensics: Malicious Cmdlet Patterns
 
 A reference list of PowerShell patterns worth alerting on directly — not because any single one is inherently malicious (most have legitimate administrative uses), but because their combination, context, or specific usage pattern is a reliable tell. Use this alongside [decoded](obfuscation-decoding.md) command-line and Script Block Logging content, since these patterns are exactly what's typically hiding underneath an obfuscation layer.
@@ -39,6 +46,16 @@ None of these are reliable in isolation — the same cmdlets show up constantly 
 
 !!! danger "Red flag"
     Any pattern on this page found inside a script block that was obfuscated to reach that point.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Module 4: PowerShell Forensics](index.md)
+- [PowerShell Forensics: Obfuscation & Decoding](obfuscation-decoding.md)
+- [PowerShell Forensics: Logging](powershell-logging.md)
+- [Drill: PowerShell Decode](../practice-drills/powershell-decode-drill.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

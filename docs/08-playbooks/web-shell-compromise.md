@@ -1,3 +1,8 @@
+---
+tags:
+  - Playbook
+---
+
 # Playbook: Web Shell / Server Compromise
 
 ## Trigger
@@ -35,6 +40,14 @@ Restore service only once the underlying vulnerability is confirmed patched — 
 ## Lessons learned
 
 Was this a known, patchable vulnerability that sat unaddressed, and if so, why? Would a Web Application Firewall have caught or blocked the exploit attempt? Is there monitoring on this class of server for exactly the process-tree anomaly that (hopefully) caught this?
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [ATT&CK Coverage Map](../00-foundations/attack-coverage-map.md)
+- [Module 8: Investigation Playbooks](index.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

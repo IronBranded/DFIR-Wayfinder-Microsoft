@@ -1,3 +1,8 @@
+---
+tags:
+  - Practice Drill
+---
+
 # Drill: Prefetch Triage
 
 ## The scenario
@@ -24,3 +29,12 @@ You've pulled `PECmd` output from a workstation flagged for unusual outbound tra
     - **Chrome, Outlook, Teams, Word, Excel, OneDrive** are all high run-count, standard install paths, consistent usage pattern — this is what baseline looks like, and none of it needs a second look on its own.
 
     **What this tells you, and what it doesn't:** Prefetch alone doesn't prove what `UPDATE.EXE` actually did — it proves execution happened, from where, and roughly when. The natural next step is exactly what the [Prefetch](../01-windows-endpoint/prefetch.md) page recommends: corroborate with [Amcache](../01-windows-endpoint/amcache.md) for a SHA-1 hash of the binary, and check [Event Log](../01-windows-endpoint/event-log-key-ids.md) 4688/Sysmon 1 data from the same window for the actual command line `PSEXEC.EXE` was run with.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Artifact: Prefetch](../01-windows-endpoint/prefetch.md)
+- [Practice Drills](index.md)
+
+<!-- BACKLINKS:END -->
+

@@ -1,3 +1,8 @@
+---
+tags:
+  - Practice Drill
+---
+
 # Drill: PowerShell Decode
 
 ## The scenario
@@ -25,3 +30,12 @@ Try it yourself first — either in a PowerShell session with the one-liner from
     **The account name is also worth noting on its own:** "backupsvc" is deliberately chosen to sound like a legitimate service account during a quick review — exactly the kind of plausible-sounding name that a rushed analyst might skim past. Cross-reference against your actual inventory of sanctioned service accounts before assuming it's legitimate just because it sounds like it could be.
 
     **What to do next:** check whether `backupsvc` still exists and is still in Administrators (see [Event Log Key IDs](../01-windows-endpoint/event-log-key-ids.md) — Event ID 4720 for the creation, 4732 for the group addition), and treat this the same as any other [AdminSDHolder](../02-active-directory/adminsdholder.md)-adjacent privilege escalation if the host is domain-joined and this account could plausibly reach further.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [PowerShell Forensics: Obfuscation & Decoding](../04-powershell-forensics/obfuscation-decoding.md)
+- [Practice Drills](index.md)
+
+<!-- BACKLINKS:END -->
+

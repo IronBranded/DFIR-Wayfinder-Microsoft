@@ -1,3 +1,10 @@
+---
+tags:
+  - Foundations
+  - T1003.001
+  - T1003.006
+---
+
 # Reporting & Communication
 
 Everything else in this guide ends at the moment of understanding — you've found the artifact, built the timeline, confirmed the compromise. None of that helps the organization until it's written down in a form someone can act on. This page is about that last step, and it's treated as its own skill deliberately: technically flawless investigative work, communicated badly, gets the wrong response from leadership just as reliably as bad investigative work does.
@@ -54,6 +61,21 @@ The **facts are identical** — same timestamps, same confidence level, same con
 
 !!! danger "The most common failure in both directions"
     Writing the executive summary as a shortened version of the technical section (still full of event IDs and GUIDs, just fewer of them) fails the executive reader just as surely as omitting the technical section entirely fails the analyst who has to act on the report six months later. They are not the same document at different lengths — they're the same facts, restructured for what each reader needs to do with them.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Module 0: Foundations](index.md)
+- [EPROCESS Internals](../03-memory-forensics/eprocess-internals.md)
+- [Malware Triage Methodology](../03-memory-forensics/malware-triage-methodology.md)
+- [Mutex (Mutant) Analysis](../03-memory-forensics/mutex-analysis.md)
+- [Thread Analysis](../03-memory-forensics/thread-analysis.md)
+- [Detection Engineering: From Hunt Query to Standing Detection](../07-defender-suite/detection-engineering.md)
+- [File Carving](../anti-forensics/file-carving.md)
+- [Log & Artifact Recovery](../anti-forensics/log-artifact-recovery.md)
+- [Windows IR Quick Reference](../quick-reference/windows-ir-poster.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

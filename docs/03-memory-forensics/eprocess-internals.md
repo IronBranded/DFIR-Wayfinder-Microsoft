@@ -1,3 +1,9 @@
+---
+tags:
+  - Memory Forensics
+  - T1055.012
+---
+
 # EPROCESS Internals
 
 ## What it is, and why this page exists separately from Process Analysis
@@ -27,6 +33,17 @@ Concretely: `windows.privileges` (`Privs`) reads the Token field directly, surfa
 ## Turning this into report language
 
 A process-tree anomaly alone ("PID 3120 claims to be `lsass.exe`") is a weak sentence in a report — it states an observation without justifying it. Pulling the EPROCESS-level detail turns it into a defensible technical finding: *"PID 3120 presented as `lsass.exe` but its EPROCESS Token held Administrator-equivalent privileges inconsistent with the legitimate `lsass.exe` at PID 640, and its VadRoot showed a memory region with RWX permissions unbacked by any file on disk — consistent with process hollowing (T1055.012)."* That sentence cites three independent structural facts, not just a name mismatch, which is the difference between an assertion and a technical finding a reader can verify. See [Reporting & Communication](../00-foundations/reporting-and-communication.md) for how this specific kind of sentence fits into a full report.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [ATT&CK Coverage Map](../00-foundations/attack-coverage-map.md)
+- [Module 3: Windows Memory Forensics](index.md)
+- [Malware Triage Methodology](malware-triage-methodology.md)
+- [Mutex (Mutant) Analysis](mutex-analysis.md)
+- [Glossary](../glossary.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

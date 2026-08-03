@@ -1,3 +1,8 @@
+---
+tags:
+  - Practice Drill
+---
+
 # Drill: Process Tree Triage
 
 ## The scenario
@@ -31,3 +36,13 @@ A live process listing pulled from a workstation, simplified to the columns that
     Everything else in this listing is textbook-normal: `smss.exe` spawned from `System`, `wininit.exe` and `winlogon.exe` both children of `smss.exe`, `services.exe` and the legitimate `lsass.exe` both children of `wininit.exe`, `svchost.exe` children of `services.exe`, and `explorer.exe` showing `userinit.exe` as parent (already exited, which is expected — see the note on this in [Baseline Process Trees](../01-windows-endpoint/process-trees.md)).
 
     **What to do next:** this is exactly the pattern [Module 3](../03-memory-forensics/injection-techniques.md) covers — a process masquerading as `lsass.exe` (via [process hollowing](../03-memory-forensics/injection-techniques.md) or simple renaming) run from `svchost.exe` is not going to have the same on-disk image as the real thing. Pull [`vadinfo`/`malfind`](../03-memory-forensics/injected-code-detection.md) against PID 3120 specifically, and treat this host as needing full incident response, not just a single-process cleanup.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Baseline Process Trees](../01-windows-endpoint/process-trees.md)
+- [EPROCESS Internals](../03-memory-forensics/eprocess-internals.md)
+- [Practice Drills](index.md)
+
+<!-- BACKLINKS:END -->
+

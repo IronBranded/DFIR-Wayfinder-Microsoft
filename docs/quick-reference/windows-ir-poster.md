@@ -133,6 +133,13 @@ Still garbage after decoding? It's compressed — try Gunzip, then Raw Inflate, 
 
 </div>
 
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Enterprise DFIR Field Guide](../index.md)
+
+<!-- BACKLINKS:END -->
+
 ## Sources
 
 Every fact on this page is sourced on the full page it links to — this page intentionally carries no separate sourcing of its own, to avoid two slightly-different versions of the same citation existing in the guide.

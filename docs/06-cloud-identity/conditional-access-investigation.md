@@ -1,3 +1,8 @@
+---
+tags:
+  - Cloud Identity
+---
+
 # Conditional Access in an Investigation
 
 ## What it does, and why the sign-in log is where you check it
@@ -14,6 +19,13 @@ That last state is the one most worth double-checking during an investigation: a
 
 !!! danger "Red flag"
     A successful sign-in with no Conditional Access policies applied where several should have matched, a relevant policy discovered to be in Report-only rather than Enforced mode, or successful authentication via a legacy protocol that bypasses modern policy evaluation entirely.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Module 6: Cloud Identity (Entra ID / Hybrid)](index.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

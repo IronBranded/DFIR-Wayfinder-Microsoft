@@ -1,3 +1,8 @@
+---
+tags:
+  - Foundations
+---
+
 # Timeline Construction & Correlation
 
 Every other page in this guide teaches recognition — here's an artifact, here's what normal looks like, here's the red flag. This page is different: it's about what happens *after* you've found several individually-suspicious things and need to turn them into one defensible story of what happened, in order, across multiple hosts and multiple log sources that don't share a clock, a timezone, or even a timestamp format.
@@ -59,6 +64,25 @@ A raw super timeline from even a single host is enormous — most of it routine.
 A single artifact is a lead, not a conclusion — this point already appears throughout this guide's artifact pages ([Amcache](../01-windows-endpoint/amcache.md) says it explicitly), but it's worth stating as a general principle here: **treat any single-source finding as provisional until a second, independently-generated source agrees with it.** "Independently-generated" is the operative phrase — two entries in the same log file corroborating each other is much weaker than a host-side artifact and a network-side log agreeing, because a single compromised or misconfigured source can be wrong in ways that repeat within itself but won't coincidentally match an unrelated system.
 
 This is also where a timeline earns its keep as evidence, not just as an organizational tool: an incident write-up built on "these five things happened, in this order, corroborated across independent sources" is a fundamentally stronger document than a list of red flags in no particular sequence — and it's what the [Diamond Model](diamond-model.md) and [Evidence Handling](evidence-handling.md) pages both assume you're capable of producing.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Module 0: Foundations](index.md)
+- [Reporting & Communication](reporting-and-communication.md)
+- [Operationalizing Threat Intelligence](threat-intelligence-operationalization.md)
+- [Volume Shadow Copy Recovery](../anti-forensics/volume-shadow-copy-recovery.md)
+- [Case Study: Business Email Compromise, End to End](../case-studies/bec-case-study.md)
+- [Case Study: Domain Compromise, End to End](../case-studies/domain-compromise-case-study.md)
+- [Case Studies](../case-studies/index.md)
+- [Glossary](../glossary.md)
+- [Enterprise DFIR Field Guide](../index.md)
+- [Network & Perimeter Log Analysis](../network-analysis/index.md)
+- [Proxy & Firewall Log Triage](../network-analysis/proxy-firewall-triage.md)
+- [Practice Drills](../practice-drills/index.md)
+- [Drill: Timeline Correlation](../practice-drills/timeline-correlation-drill.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

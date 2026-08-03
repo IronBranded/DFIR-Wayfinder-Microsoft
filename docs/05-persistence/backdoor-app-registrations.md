@@ -1,3 +1,11 @@
+---
+tags:
+  - Persistence
+  - Cloud
+  - T1098
+  - T1098.001
+---
+
 # Persistence: Backdoor App Registrations & Service Principal Credentials
 
 **ATT&CK:** [T1098.001](https://attack.mitre.org/techniques/T1098/001/) — Account Manipulation: Additional Cloud Credentials
@@ -23,6 +31,13 @@ Baseline your tenant's legitimate app registrations and their expected permissio
 ## Cleanup
 
 Remove the added credential (or delete the malicious app registration outright if it was purpose-built), and review the full permission history of the affected app — if it's a legitimate app the attacker piggybacked on, confirm its original permission set is still intact and hasn't also been quietly expanded.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Module 5: Persistence Catalog](index.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

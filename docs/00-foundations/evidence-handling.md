@@ -1,3 +1,8 @@
+---
+tags:
+  - Foundations
+---
+
 # Evidence Handling & Chain of Custody — for Enterprise IR
 
 This guide is written for enterprise defenders, not criminal prosecution — but "we're not going to court" is not the same as "rigor doesn't matter." Three other things routinely depend on the same discipline: cyber-insurance claims, regulatory/breach-notification obligations, and the possibility that today's internal incident becomes tomorrow's civil litigation or law-enforcement referral, at which point sloppy handling from day one can't be fixed retroactively.
@@ -21,6 +26,16 @@ If your organization's specific situation changes this calculus (regulated indus
 
 !!! success "Baseline habit"
     Keep a running, timestamped analyst log from the moment you're engaged — even a plain text file. It's the cheapest insurance policy in the entire incident.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Module 0: Foundations](index.md)
+- [Timeline Construction & Correlation](timeline-construction.md)
+- [Memory Acquisition](../03-memory-forensics/acquisition.md)
+- [Playbook: Insider Threat](../08-playbooks/insider-threat.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

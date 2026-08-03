@@ -1,3 +1,8 @@
+---
+tags:
+  - PowerShell
+---
+
 # PowerShell Forensics: Logging
 
 PowerShell is capable enough to do almost anything on modern Windows — and, critically, capable of doing it **entirely in memory**. A script that never writes itself to disk never generates a [Prefetch](../01-windows-endpoint/prefetch.md) entry, never gets an AV file-scan hit, and leaves nothing for filesystem-based artifacts to find. Logging is how you get visibility anyway. None of the four mechanisms below are mutually exclusive — a well-instrumented environment runs several at once.
@@ -30,6 +35,14 @@ Most 4103/4104 volume in a well-managed environment comes from legitimate admini
 
 !!! danger "Red flag"
     A 4104 event whose script block, once read, matches any of the [malicious cmdlet patterns](powershell-malicious-patterns.md) in this guide — regardless of how the command line that triggered it was originally obfuscated.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Module 4: PowerShell Forensics](index.md)
+- [PowerShell Forensics: Obfuscation & Decoding](obfuscation-decoding.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

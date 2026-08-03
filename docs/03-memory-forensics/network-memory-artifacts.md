@@ -1,3 +1,8 @@
+---
+tags:
+  - Memory Forensics
+---
+
 # Network Artifacts in Memory
 
 ## What it captures that a live `netstat` can't
@@ -15,6 +20,16 @@ This connects directly to [Module 4](../04-powershell-forensics/index.md)'s down
 
 !!! danger "Red flag"
     A network connection owned by a process with no legitimate reason to be making outbound connections, or one owned by a PID that doesn't appear in `pslist` at all.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [ATT&CK Coverage Map](../00-foundations/attack-coverage-map.md)
+- [Module 3: Windows Memory Forensics](index.md)
+- [Malware Triage Methodology](malware-triage-methodology.md)
+- [Process Analysis: Finding What's Hidden](volatility-process-analysis.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

@@ -1,3 +1,12 @@
+---
+tags:
+  - Foundations
+  - T1059.001
+  - T1059.005
+  - T1134
+  - T1566
+---
+
 # ATT&CK Coverage Map
 
 ## What this page is for
@@ -26,6 +35,14 @@ Every persistence entry, most artifact pages, and several playbooks in this guid
 ## How to use this page
 
 Before assuming a gap in your own environment's detection is a tooling problem, check whether it's actually a **coverage gap in this guide** first — several of the "Notable gap" entries above (Discovery, non-PowerShell execution, LOLBin cataloging) are genuine candidates for this guide's own next additions, not things you're necessarily missing in your own stack.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Module 0: Foundations](index.md)
+- [Tags Index](../tags.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

@@ -1,3 +1,8 @@
+---
+tags:
+  - Practice Drill
+---
+
 # Drill: Timeline Correlation
 
 ## The scenario
@@ -59,3 +64,11 @@ Last Run (local, WKS-2214): 13:54:00
     **Why the uncorrected version would have misled the investigation:** without the correction, `WKS-2214`'s Prefetch entry (13:54:00) sits *before* its own Sysmon connection record (13:55:15) — internally consistent, so nothing looks obviously wrong at a glance. The mistake wouldn't be a contradiction you'd notice; it would be a full 8-minute error in exactly where you draw the boundary of "before this, the host was clean." On a host you're trying to determine a clean restore-point for, that's not a rounding error — it's the difference between restoring from a backup that still contains the dropper and one that doesn't.
 
     **What this confirms:** `WKS-2214` is patient zero, not `FILE-SRV02` — the file server is a propagation target, not the entry point. That changes where remediation starts: per the [Ransomware playbook](../08-playbooks/ransomware.md), initial-vector analysis belongs on `WKS-2214` (how did `INVOICE_2026.PDF.EXE` get there — check [Phishing](../08-playbooks/phishing.md) delivery data), not on the server where the damage was actually noticed.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Practice Drills](index.md)
+
+<!-- BACKLINKS:END -->
+

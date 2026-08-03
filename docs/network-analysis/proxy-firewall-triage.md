@@ -1,3 +1,8 @@
+---
+tags:
+  - Network Analysis
+---
+
 # Proxy & Firewall Log Triage
 
 ## What's actually in one of these logs
@@ -36,6 +41,15 @@ These checks are strongest layered, not run one at a time in isolation — a sin
 ## Turning this into report language
 
 Per the same standard used throughout this guide — state the specific fields and values, not just the conclusion. "Sustained connections from `WKS-4471` to `[destination]:443` showed a 340:1 outbound-to-inbound byte ratio across 12 connections over 3 hours, with a user-agent string not matching any browser installed on the host per software inventory, and a JA4 fingerprint associated with a known post-exploitation framework" is independently verifiable and unambiguous about severity — a reader doesn't need to trust your judgment, they can check every cited fact themselves.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [ATT&CK Coverage Map](../00-foundations/attack-coverage-map.md)
+- [Glossary](../glossary.md)
+- [Network & Perimeter Log Analysis](index.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

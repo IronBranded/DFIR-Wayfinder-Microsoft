@@ -1,3 +1,11 @@
+---
+tags:
+  - Persistence
+  - Endpoint
+  - T1546
+  - T1546.003
+---
+
 # Persistence: WMI Event Subscriptions
 
 **ATT&CK:** [T1546.003](https://attack.mitre.org/techniques/T1546/003/) — Event Triggered Execution: Windows Management Instrumentation Event Subscription
@@ -32,6 +40,13 @@ WMI event subscriptions are genuinely rare in normal enterprise environments out
 ## Cleanup
 
 Remove all three WMI objects (`Get-WmiObject -Namespace root\subscription -Class __EventFilter` / `__EventConsumer` / `__FilterToConsumerBinding`, then delete the matching instances) — removing only one leaves the others orphaned but potentially reusable if a filter or consumer with the same name gets re-registered.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Module 5: Persistence Catalog](index.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

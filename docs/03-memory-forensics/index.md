@@ -1,3 +1,8 @@
+---
+tags:
+  - Memory Forensics
+---
+
 # Module 3: Windows Memory Forensics
 
 Memory is the most volatile evidence tier that's still practical to capture in full (see [Order of Volatility](../00-foundations/order-of-volatility.md)) — and it's often the *only* place fileless techniques (see [Module 4](../04-powershell-forensics/index.md)) ever leave a trace, precisely because they never touch disk.
@@ -16,3 +21,15 @@ Memory is the most volatile evidence tier that's still practical to capture in f
 - [x] [Malware Triage Methodology](malware-triage-methodology.md) — the capstone: static + memory triage as one workflow, and turning capability into an impact statement
 
 This module pairs directly with [Module 4: PowerShell Forensics](../04-powershell-forensics/index.md) — most of what makes fileless PowerShell dangerous is precisely that it only ever exists in the region this module covers.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Baseline Process Trees](../01-windows-endpoint/process-trees.md)
+- [PowerShell Forensics: Evasion Detection](../04-powershell-forensics/evasion-detection.md)
+- [Persistence: LSA Provider / Security Support Provider Abuse](../05-persistence/lsa-ssp.md)
+- [Playbook: Ransomware](../08-playbooks/ransomware.md)
+- [Enterprise DFIR Field Guide](../index.md)
+
+<!-- BACKLINKS:END -->
+

@@ -1,3 +1,8 @@
+---
+tags:
+  - PowerShell
+---
+
 # PowerShell Forensics: Obfuscation & Decoding
 
 This page is the hands-on companion to [PowerShell Logging](powershell-logging.md): once you have a captured command line or a decoded Script Block Logging (4104) event, this is how you turn what looks like noise into something you can actually read and assess. Every example below was generated and round-trip verified — nothing here is approximated.
@@ -94,6 +99,22 @@ Once you're past Base64 and compression, the underlying script itself is often *
 
 !!! tip "Practice this"
     [PowerShell Decode](../practice-drills/powershell-decode-drill.md) gives you a fresh, independently-verified `-EncodedCommand` string — different from every example on this page — to decode yourself before checking the answer.
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [ATT&CK Coverage Map](../00-foundations/attack-coverage-map.md)
+- [Operationalizing Threat Intelligence](../00-foundations/threat-intelligence-operationalization.md)
+- [PowerShell Forensics: Evasion Detection](evasion-detection.md)
+- [Module 4: PowerShell Forensics](index.md)
+- [PowerShell Forensics: Logging](powershell-logging.md)
+- [PowerShell Forensics: Malicious Cmdlet Patterns](powershell-malicious-patterns.md)
+- [Advanced Hunting with KQL](../07-defender-suite/advanced-hunting-kql.md)
+- [Practice Drills](../practice-drills/index.md)
+- [Drill: PowerShell Decode](../practice-drills/powershell-decode-drill.md)
+- [Windows IR Quick Reference](../quick-reference/windows-ir-poster.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 

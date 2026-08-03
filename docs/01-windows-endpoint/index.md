@@ -1,3 +1,8 @@
+---
+tags:
+  - Windows Endpoint
+---
+
 # Module 1: Windows Endpoint Forensics
 
 Applies uniformly across workstations, laptops, servers, and VMs — anywhere Windows runs, on-prem or in the cloud. Domain Controller-specific artifacts (NTDS.dit, SYSVOL, replication metadata) live in [Module 2](../02-active-directory/index.md) instead, since they don't exist on a normal member server.
@@ -28,3 +33,13 @@ This module is organized by evidence category. Every page follows the same templ
 
 !!! tip "Where to start"
     New to this guide? Read [Prefetch](prefetch.md) first — it's the template every artifact page here follows. Then [Baseline Process Trees](process-trees.md) is arguably the single highest-value page in this module: most investigations start with "is this process tree normal?"
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [Module 2: Active Directory & Domain Controllers](../02-active-directory/index.md)
+- [Module 4: PowerShell Forensics](../04-powershell-forensics/index.md)
+- [Enterprise DFIR Field Guide](../index.md)
+
+<!-- BACKLINKS:END -->
+

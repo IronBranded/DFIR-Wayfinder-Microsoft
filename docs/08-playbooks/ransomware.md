@@ -1,3 +1,8 @@
+---
+tags:
+  - Playbook
+---
+
 # Playbook: Ransomware
 
 ## Trigger
@@ -37,6 +42,18 @@ Restore only from backups confirmed clean and predating the intrusion's known st
 ## Lessons learned
 
 Were backups actually immutable/offline, or reachable (and therefore vulnerable) from the production network? Did network segmentation limit spread the way it was designed to, or did the attacker move through it unimpeded? What was the initial vector, and is that specific gap now closed?
+
+<!-- BACKLINKS:START -->
+## Referenced From
+
+- [ATT&CK Coverage Map](../00-foundations/attack-coverage-map.md)
+- [Malware Triage Methodology](../03-memory-forensics/malware-triage-methodology.md)
+- [Module 8: Investigation Playbooks](index.md)
+- [Volume Shadow Copy Recovery](../anti-forensics/volume-shadow-copy-recovery.md)
+- [Practice Drills](../practice-drills/index.md)
+- [Drill: Timeline Correlation](../practice-drills/timeline-correlation-drill.md)
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 
