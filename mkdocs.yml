@@ -72,19 +72,10 @@ markdown_extensions:
 plugins:
   - search
   - tags
-  - git-revision-date-localized:
-      type: date
-      enable_creation_date: false
-      fallback_to_build_date: true
-  - to-pdf:
-      enabled_if_env: ENABLE_PDF_EXPORT
-      output_path: pdf/enterprise-dfir-field-guide.pdf
-      cover_title: Enterprise DFIR Field Guide
-      cover_subtitle: Windows Endpoints, Memory, Active Directory, and Hybrid/Cloud Identity
-      toc_title: Contents
-      toc_level: 2
-      exclude_pages:
-        - tags/
+  # git-revision-date-localized and to-pdf removed: both are third-party
+  # MkDocs plugins outside Material's own ecosystem, and Zensical
+  # silently no-ops unsupported plugins rather than erroring. Revisit
+  # both once Zensical's module/plugin system (on their roadmap) lands.
 
 nav:
   - Home: index.md

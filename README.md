@@ -6,26 +6,27 @@ An interactive, data-driven reference for enterprise digital forensics and incid
 
 ## Status
 
-Complete. All 9 original modules plus Anti-Forensics & Data Recovery, Network & Perimeter Log Analysis, Case Studies, Investigation Playbooks, and Practice Drills are fully built. ~50,000+ words across 107 pages, rebuilding clean under `mkdocs build --strict` after every change.
+Complete. All 9 original modules plus Anti-Forensics & Data Recovery, Network & Perimeter Log Analysis, Case Studies, Investigation Playbooks, and Practice Drills are fully built. ~50,000+ words across 107 pages, rebuilding clean under `zensical build -s` (strict mode) after every change.
 
 ## Functionality added beyond the original build
 
 - **Tags** — every page tagged by module and, where one is named directly, MITRE ATT&CK ID. Browse via the Tags Index. Regenerate after adding new pages with `python3 scripts/tag_pages.py` (idempotent — skips files that already have front matter).
 - **Backlinks** — every page with incoming links gets an auto-generated "Referenced From" section. Regenerate with `python3 scripts/generate_backlinks.py` (idempotent, safe to run repeatedly — this runs automatically in CI before every deploy).
-- **Breadcrumbs** and **per-page "last updated" dates** (via git history — see the note on this below).
-- **PDF export** — a single combined PDF is built automatically on deploy, available at `/pdf/enterprise-dfir-field-guide.pdf` on the live site. Locally: `ENABLE_PDF_EXPORT=1 mkdocs build`. Known limitation: Mermaid diagrams (process trees, the ATT&CK hierarchy, the Diamond Model) require JS execution to render and will appear as raw code blocks in the PDF rather than diagrams; internal cross-reference links also won't resolve to in-document anchors in the merged PDF the way they do on the live site. Both are inherent to converting a linked, JS-rendered site into one static document, not bugs to chase down further.
+- **Breadcrumbs**.
 - **Scheduled dead-link checking** — `.github/workflows/link-check.yml` runs weekly (and on any PR touching `docs/`) via `lychee`, opening an issue automatically if something 404s.
 - **Light-mode contrast fix** — the original teal/amber accents failed WCAG AA against a white background (verified by computing actual contrast ratios, not eyeballing); replaced with darker variants that pass in light mode while dark mode keeps the original, already-compliant colors.
 
-### A note on "last updated" dates
+### Two features currently disabled, not removed
 
-This requires real git history to be meaningful. The repo was `git init`'d as part of this build with a single initial commit — every page will show that same date until you make further commits. That's intentional; the alternative was fabricating backdated commit history, which would make the dates actively misleading rather than just uninformative.
+Per-page "last updated" dates (`git-revision-date-localized`) and combined PDF export (`mkdocs-to-pdf`) both worked under the old MkDocs Material build. Both are third-party plugins outside Material's own ecosystem, and after migrating to Zensical (see below), Zensical silently no-ops any plugin it doesn't yet natively support rather than erroring — so the build stays clean, but neither feature currently does anything. Their config is still documented in `mkdocs.yml`'s plugins section as comments. Revisit both once Zensical's module/plugin system (on their public roadmap) lands; until then, per-file history is fully visible via normal `git log`, and PDF export would need to run through a separate MkDocs-Material build if wanted in the meantime.
 
-## A known consideration: the MkDocs ecosystem is mid-transition
+## Why this runs on Zensical, not Material for MkDocs
 
-As of mid-2026, the original MkDocs project's maintenance has stalled, and Material for MkDocs (the theme this project uses) is in maintenance mode with an end-of-life date of **November 5, 2026** — critical fixes only until then. The Material for MkDocs team has built a designated successor, **Zensical** (same team, MIT-licensed, aiming for near drop-in migration from Material for MkDocs projects), but it is still in Alpha as of this writing.
+This project was originally built on MkDocs Material. Partway through, it became clear that wasn't a safe long-term foundation: the underlying MkDocs project has been unmaintained since August 2024, Material for MkDocs itself entered maintenance mode with an end-of-life of **November 5, 2026**, and a from-scratch "MkDocs 2.0" in development elsewhere offered no migration path and would have broken every plugin this project depended on.
 
-This project is unaffected today — `requirements.txt` pins to `mkdocs-material`, which itself pins its `mkdocs` dependency below version 2, so builds won't break unexpectedly. Recommended path: keep building content here now, and re-evaluate migrating to Zensical (or a community fork such as ProperDocs/MaterialX) before the November 2026 EOL date, once Zensical is further out of Alpha. Check `zensical.org` for current migration tooling when that time comes.
+The Material for MkDocs team's own response was **Zensical** — a ground-up rewrite by the same team, MIT-licensed, explicitly built for near drop-in compatibility with existing Material for MkDocs projects. Rather than take that compatibility claim on faith, this project's actual `mkdocs.yml` and all 107 pages were test-built against Zensical directly before switching: it built clean on the first try, in strict mode, with zero configuration changes, and every feature specific to this project — admonition callouts, Mermaid diagrams, the tags plugin, custom CSS/fonts, breadcrumbs, the backlinks script's generated content — came through correctly. The only casualties were the two third-party (non-Material) plugins noted above. Real organizations (DDEV, USGS's public docs, Renovate) have already made the same move, which was part of the confidence behind doing this now rather than waiting.
+
+If you're reading this after November 2026 and Zensical has since reached a stable 1.0, that's expected — it was Alpha at the time of this migration, under active, frequent development, with a committed 12-month window to reach feature parity with Material for MkDocs.
 
 ## Getting this live on your own GitHub Pages
 
@@ -39,7 +40,7 @@ This project already has one git commit in it (see the note on revision dates ab
    git push -u origin main
    ```
 3. In `mkdocs.yml`, replace `YOUR-USERNAME`/`dfir-field-guide` in `site_url`, `repo_url`, and `edit_uri` with your actual GitHub username and repo name.
-4. The included GitHub Action (`.github/workflows/deploy.yml`) runs automatically on every push to `main` — it builds the site (including the PDF), regenerates tags/backlinks, and pushes to a `gh-pages` branch.
+4. The included GitHub Action (`.github/workflows/deploy.yml`) runs automatically on every push to `main` — it regenerates tags/backlinks, builds the site with Zensical, and deploys straight to the `gh-pages` branch via `peaceiris/actions-gh-pages`.
 5. After the first successful run, go to **Settings → Pages** in your GitHub repo and confirm the source is set to the `gh-pages` branch (GitHub sometimes needs this pointed at manually the first time).
 6. Optional: enable the weekly dead-link check by doing nothing — `.github/workflows/link-check.yml` is scheduled and runs on its own once the repo is on GitHub.
 
@@ -47,10 +48,10 @@ This project already has one git commit in it (see the note on revision dates ab
 
 ```
 pip install -r requirements.txt
-mkdocs serve
+zensical serve
 ```
 
-Then open `http://127.0.0.1:8000`.
+Then open `http://127.0.0.1:8000`. (`zensical build -s` runs a one-off strict build without serving, and is what CI uses.)
 
 ## Contributing / content standards
 

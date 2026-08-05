@@ -1,4 +1,4 @@
-name: Deploy MkDocs site to GitHub Pages
+name: Deploy Zensical site to GitHub Pages
 
 on:
   push:
@@ -15,11 +15,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          # git-revision-date-localized needs full history to compute an
-          # accurate per-file "last updated" date - the default shallow
-          # checkout only sees the most recent commit.
-          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -32,15 +27,9 @@ jobs:
           key: ${{ github.ref }}
           path: .cache
           restore-keys: |
-            mkdocs-material-
+            zensical-
 
-      - name: Install system dependencies (WeasyPrint, for PDF export)
-        run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y --no-install-recommends \
-            libpango-1.0-0 libpangocairo-1.0-0 libgdk-pixbuf2.0-0 libcairo2
-
-      - name: Install Python dependencies
+      - name: Install dependencies
         run: pip install -r requirements.txt
 
       - name: Regenerate tags and backlinks
@@ -48,7 +37,12 @@ jobs:
           python3 scripts/tag_pages.py
           python3 scripts/generate_backlinks.py
 
-      - name: Build and deploy (includes PDF export)
-        env:
-          ENABLE_PDF_EXPORT: "1"
-        run: mkdocs gh-deploy --force
+      - name: Build (strict)
+        run: zensical build -s
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+          force_orphan: true
