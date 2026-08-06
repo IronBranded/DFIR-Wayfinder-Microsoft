@@ -3,9 +3,9 @@ site_description: >-
   An interactive, data-driven guide to enterprise digital forensics and
   incident response - Windows endpoints, memory, Active Directory, and
   hybrid/cloud identity.
-site_url: https://YOUR-USERNAME.github.io/dfir-field-guide/
-repo_url: https://github.com/YOUR-USERNAME/dfir-field-guide
-repo_name: dfir-field-guide
+site_url: https://ironbranded.github.io/Microsoft-DFIR-Wayfinder/
+repo_url: https://github.com/IronBranded/Microsoft-DFIR-Wayfinder
+repo_name: Microsoft-DFIR-Wayfinder
 edit_uri: edit/main/docs/
 
 theme:

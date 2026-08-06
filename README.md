@@ -2,7 +2,7 @@
 
 An interactive, data-driven reference for enterprise digital forensics and incident response — Windows endpoints, memory, Active Directory, and hybrid/cloud identity. Built for SOC analysts, incident responders, and threat hunters. Not written for criminal-prosecution workflows.
 
-**Live site:** update this once deployed — `https://YOUR-USERNAME.github.io/dfir-field-guide/`
+**Live site:** `https://ironbranded.github.io/Microsoft-DFIR-Wayfinder/`
 
 ## Status
 
@@ -30,19 +30,20 @@ If you're reading this after November 2026 and Zensical has since reached a stab
 
 ## Getting this live on your own GitHub Pages
 
-This project already has one git commit in it (see the note on revision dates above) — you're pushing an existing repo, not starting fresh.
+This repo is `IronBranded/Microsoft-DFIR-Wayfinder`, already pushed. One setting is the difference between what's live now (GitHub's default Jekyll rendering of this README) and the actual built site — **Pages source has to be set to "GitHub Actions," not "Deploy from a branch."** This is a one-time manual step; nothing in the repo can set it automatically.
 
-1. Create a new, empty repository on GitHub (don't initialize it with a README, license, or .gitignore — this project already has all three).
-2. Point it at your new repo and push:
-   ```
-   git branch -M main
-   git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPO.git
-   git push -u origin main
-   ```
-3. In `mkdocs.yml`, replace `YOUR-USERNAME`/`dfir-field-guide` in `site_url`, `repo_url`, and `edit_uri` with your actual GitHub username and repo name.
-4. The included GitHub Action (`.github/workflows/deploy.yml`) runs automatically on every push to `main` — it regenerates tags/backlinks, builds the site with Zensical, and deploys straight to the `gh-pages` branch via `peaceiris/actions-gh-pages`.
-5. After the first successful run, go to **Settings → Pages** in your GitHub repo and confirm the source is set to the `gh-pages` branch (GitHub sometimes needs this pointed at manually the first time).
-6. Optional: enable the weekly dead-link check by doing nothing — `.github/workflows/link-check.yml` is scheduled and runs on its own once the repo is on GitHub.
+1. In this repo: **Settings → Pages → Build and deployment → Source**, change the dropdown from "Deploy from a branch" to **"GitHub Actions."**
+2. **Settings → Actions → General → Workflow permissions** — confirm this is set to allow Actions to run (the deploy workflow's own `permissions:` block scopes exactly what it needs — `pages: write` and `id-token: write` — so this shouldn't need to be "Read and write," but if a run still fails with a permissions error, check here first).
+3. Push any commit to `main` (or go to **Actions → Deploy Zensical site to GitHub Pages → Run workflow** to trigger it manually without waiting for a push) — the workflow regenerates tags/backlinks, builds with Zensical, and deploys via `actions/deploy-pages`, GitHub's own Pages deployment action, rather than pushing to a separate branch.
+4. Give it a minute, then check `https://ironbranded.github.io/Microsoft-DFIR-Wayfinder/` — you're looking for the actual dark/teal site with a sidebar and search, not this README rendered plain.
+
+### Why the previous attempts didn't go live
+
+Every earlier run of the deploy workflow failed at its final step — pushing the built site to a `gh-pages` branch via a third-party action that needs repo-wide write access, which the default token permissions didn't grant. Independently, and regardless of that, Pages was set to "Deploy from a branch," so even a successful run wouldn't have been served — GitHub's own automatic Jekyll build of `main` (specifically rendering `README.md`) was what's actually been live this whole time. The rewritten workflow above uses GitHub's own Pages-deployment action instead, scoped to Pages-specific permissions rather than full repo write access, which avoids this failure mode rather than working around it.
+
+### If you push this project somewhere else instead
+
+Steps 1–2 are specific to *this* repo already existing. Starting fresh elsewhere: create an empty GitHub repo, `git remote add origin <your-repo-url>`, `git push -u origin main`, then update `site_url`/`repo_url`/`repo_name` in `mkdocs.yml` to match before following steps 1–4 above.
 
 ## Running it locally
 
