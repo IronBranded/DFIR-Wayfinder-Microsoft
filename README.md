@@ -3,7 +3,7 @@
 
 <h3 align="center">
   <a href="https://ironbranded.github.io/Microsoft-DFIR-Wayfinder/" target="_blank" rel="noopener noreferrer">
-    🟢 NAVIGATE THE ATLAS 🟢
+    🟢 Find your Way to DFIR 🟢
   </a>
 </h3>
 
